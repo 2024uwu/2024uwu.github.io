@@ -18,8 +18,7 @@ $(document).ready(function(){
 
                 }
             }
-        ]
-    })
+        ] 
     });
 
     // Initialize the Slick carousel for text
@@ -31,3 +30,5 @@ $(document).ready(function(){
         fade: true,
         asNavFor: '.img-slick',
     });
+    
+})
