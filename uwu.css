@@ -113,7 +113,7 @@ display:flex;
 }
 
 .blob-bg{
-    background-image:url(light_mode/blob-bg.png);
+    background-image:url(light_mode/blob-bg2.jpg);
     background-size:100% 100%;
     background-position: top;
     background-repeat:no-repeat;
@@ -145,7 +145,7 @@ display:flex;
     align-items: bottom;
     gap:1.5rem;
     margin-top:2.25rem;
-    margin-bottom:4.5em;
+    margin-bottom:3rem;
 }
 
 
@@ -189,30 +189,12 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     background-color: #8436C9;
 }
 
-.purplebob{
-    height:fit-content;
-    position: absolute;
-    bottom:0;
-    right:0;
-    transform: translateY(50%);
-    display:none;
+.origin{
+    padding-top:2rem;
 }
-
-.purplebob img{
-    height:600px;
-}
-
-.yellowbob{
-    position:relative;
-    top:0;
-    left:0;
-    display:none;
-}
-
-
 .origin-header{
     text-align:center;
-    margin-top:5rem;
+    margin-top:3rem;
 }
 
 .origin-title{
@@ -295,11 +277,10 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 
 
 .goals-and-plans{
-
+    padding-bottom:3rem;
     background-color: var(--clr-blue);
     width:100vw;
     display:flex;
- 
 }
 
 .goals-and-plans-container{
@@ -314,7 +295,6 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 
 .goals-and-plans-label{
     margin-top:1.5rem;
-    font-size:1.3rem;
 }
 
 .goals-and-plans-title{
@@ -350,7 +330,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     display:flex;
     padding:1em;
     border-radius:15px;
-    transition:all 0.4s ease;
+    transition:all 0.3s ease;
     border:1px solid black;
     width:auto;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
@@ -482,7 +462,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.4);
     overflow: hidden;
     transition: all 0.2s ease;
-    transition-timing-function: cubic-bezier(0.68, -0.5, 0.265, 1.5);
+    transition-timing-function: cubic-bezier(0.68, -0.5, 0.265, 2);
 }
 
 
@@ -707,6 +687,13 @@ footer p{
 }
 
 @media (max-width:1024px){
+    p{
+        font-size:1.5rem;
+    }
+    
+    h1{
+        font-size:3rem;
+    }
     .navbar, .hero-container ,.origin-header ,.goals-and-plans-container , .text-wrapper, .members-cards-container, .members-header{
         max-width:768px;
     }
@@ -716,11 +703,11 @@ footer p{
     }
 
     .collapsible label{
-        font-size:0.9rem;
+        font-size:1.1rem;
 }
 
 .collapsible-text{
-    font-size:0.9em;
+    font-size:1.1em;
 }
 
 
@@ -768,13 +755,7 @@ footer p{
 
 /* enter tablet */
 @media (width<=768px){
-    p{
-        font-size:1.75rem;
-    }
-    
-    h1{
-        font-size:3rem;
-    }
+   
 
     .hero-text{
         font-size:1.5rem;
@@ -820,7 +801,7 @@ padding:0;
 }
 .members-cards h4{
     font-size:0.86rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top:0.3rem;
 }
 .members-cards h3{
@@ -941,10 +922,6 @@ padding:0;
         width:auto;
     }
 
-    .yellowbob{
-        left:-20%;
-        transform:translateY(-0.01%);
-    }
     footer {
         line-height:1.5rem;
     }
