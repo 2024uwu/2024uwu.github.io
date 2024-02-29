@@ -548,11 +548,6 @@ transform:rotate(-2deg);
     font-weight: 600;
 }
 
-.members-header p{
-    font-size:1.8rem;
-}
-
-
 footer{
     background-color: var(--clr-yellow);
     padding:1.5rem 0;
