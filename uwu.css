@@ -27,25 +27,17 @@
 
 }
 
-
-
-body html{
-    overflow-x: hidden;
-}
-
 html::-webkit-scrollbar{
     display:none;
 }
 
 html{
     background-color:var(--clr-bg);
-    z-index:1;
 }
 
 
 
-.navbar, .hero-container ,.origin-header ,.goals-and-plans-container, .members-header , .members-cards-container {
-    width:100%;
+.navbar, .hero-container ,.origin-header,.goals-and-plans-container, .members-header , .members-cards-container {
     margin-left:auto;
     margin-right:auto;
     padding-left:0.5rem;
@@ -53,10 +45,8 @@ html{
 }
 
 .hero{
-    height:100vh;
     width:100vw;
     background-color: var(--clr-bg);
-    z-index:5;
 }
 
 .logo{
@@ -67,27 +57,35 @@ html{
 .logo svg{
     transform: scale(1.5);
 }
-
+.navbar-container{
+    border-bottom:2px solid var(--clr-text);
+}
 .navbar{
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    text-align: center;
-    border-bottom:2px solid black;
-    padding:2rem 2rem 2rem 8rem;
-    width:100%;
+    padding:2rem 0;
+    border:2px solid red;
+
 }
 
 .navbar ul{
     display: flex;
-    gap:2em;
+    gap:1.5em;
     list-style:none;
-    float:right;
 }
 
 .navlinks{
-margin-right:2em;
+display:flex;
+    border:2px solid red;
+    align-items:center;
 }
+
+.nav-right{
+    display:flex;
+}
+
+
 .navbar a{
     font:cabin;
     text-decoration: none;
@@ -98,35 +96,46 @@ margin-right:2em;
 
 .navbutton{
     background-color: transparent;
-    border:2px solid black;
+    border:1px solid var(--clr-text);
     border-radius:180px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    padding:0.2rem;
+    margin-left:1.5em;
+    padding:0.5rem 0.5rem 0.3rem 0.5rem;
+    transition:all 0.3s ease;
     
 }
 .navbutton svg{
-    width:20px;
+    width:30px;
+    height:30px;
+}
+
+.navbutton:hover{
+    box-shadow:0 3px 5px rgba(0,0,0,0.2);
+}
+
+.blob-bg{
+    background-image:url(light_mode/blob-bg.png);
+    background-size:100% 100%;
+    background-position: top;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+    padding-top:10rem;
+    background-color: var(--clr-bg);
 
 }
+
 .hero-container{
     display:flex;
     justify-content: center;
 }
 .hero-content{
+
     text-align:center;
-}
-.hero-title{
-    margin-top:-6rem;
-    font-size:4rem;
 }
 
 
 .hero-text{
     margin-top:0.5rem;
     line-height:2rem;
-    width:40ch;
     font-size:1.875rem;
 }
 
@@ -136,6 +145,7 @@ margin-right:2em;
     align-items: bottom;
     gap:1.5rem;
     margin-top:2.25rem;
+    margin-bottom:4.5em;
 }
 
 
@@ -190,32 +200,22 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 
 .purplebob img{
     height:600px;
-    z-index: 13;
 }
 
 .yellowbob{
     position:relative;
     top:0;
     left:0;
-    z-index:5;
+    display:none;
 }
 
-.origin{
-    background-color: var(--clr-bg);
-    overflow:hidden;
-    padding-top:3.5rem;
-    z-index: 10;
-}
+
 .origin-header{
     text-align:center;
-    z-index:5;
+    margin-top:5rem;
 }
 
-.origin-header p{
-    font-size: 1.5rem;
-}
 .origin-title{
-    font-size:3.5rem;
     font-weight:bold;
 }
 .origin-title span{
@@ -231,6 +231,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 
 .section {
     margin-top:5rem;
+    padding-bottom:4rem;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -294,10 +295,10 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 
 
 .goals-and-plans{
+
     background-color: var(--clr-blue);
     width:100vw;
     display:flex;
-    margin-top:2rem;
  
 }
 
@@ -305,7 +306,6 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     margin-top:3rem;
     margin-left:auto;
     margin-right:auto;
-    z-index:10;
 }
 
 .goals-and-plans-content{
@@ -350,11 +350,11 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     display:flex;
     padding:1em;
     border-radius:15px;
-    z-index:1;
-    transition:all 0.3s ease;
+    transition:all 0.4s ease;
     border:1px solid black;
     width:auto;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
 }
 
 .collapsible-label svg{
@@ -378,8 +378,8 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     position:relative;
     opacity:0;
     width:auto;
-    top:-40%;
-    transition:all 0.3s ease;
+    top:-30%;
+    transition:all 0.4s ease;
     background-color: white;
     border:1px solid black;
     border-top:none;
@@ -426,12 +426,13 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 .members-cards-container{
     margin-top:3rem;
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
     gap:2.5rem;
 }
 .members{
     background-color:var(--clr-bg);
     width:100vw;
+    padding-top:4rem;
 }
 
 .members-header{
@@ -439,8 +440,6 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     justify-content: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top:4rem;
-    border:2px solid red;
 }
     
 .members-header h1 span{
@@ -457,7 +456,11 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     margin-right:auto;
 
 }
+.members-cards-container a{
+    text-decoration: none;
+    color:var(--clr-text);
 
+}
 .members-cards-row1{
     display:flex;
     justify-content: space-evenly;
@@ -468,7 +471,6 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 .members-img{
     background-color: grey;
     height:70%;
-    z-index: -1;
     border-radius: 20px 20px 0 0;
 }
 .members-cards{
@@ -479,6 +481,8 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     border-radius:20px;
     box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    transition: all 0.2s ease;
+    transition-timing-function: cubic-bezier(0.68, -0.5, 0.265, 1.5);
 }
 
 
@@ -510,7 +514,6 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     justify-content: space-evenly;
     margin-top:2rem;
     width:100%;
-    border: 2px solid red;
 
 }
 
@@ -520,10 +523,8 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     justify-content: space-evenly;
     align-items: center;
     width:100%;
-    border:3px solid red;
 }
 .members-img-rep{
-    border:2px solid red;
     width:50px;
     height:50px;
     border-radius: 50px;
@@ -538,8 +539,26 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     border:1px solid var(--clr-text);
     border-radius:15px;
     box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.4);
+    transition:all 0.2s ;
 }
 
+.members-cards:hover{
+transform:rotate(-2deg);
+}
+
+.members-cards-rep:hover{
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.6);
+    transform:scale(1.005);
+}
+
+.members-cards:active {
+    transform:rotate(-2deg);
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.4);
+}
+.members-cards-rep:active{
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.4);
+    transform:scale(0.995);
+}
 .members-rep-img-bottom h3{
     text-transform: uppercase;
     margin-bottom:0.3rem;
@@ -554,8 +573,21 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     font-weight: 600;
 }
 
+.members-header p{
+    font-size:1.8rem;
+}
 
 
+footer{
+    background-color: var(--clr-yellow);
+    padding:1.5rem 0;
+    text-align: center;
+    line-height:3rem;
+}
+
+footer p{
+    font-size: 1.5rem;
+}
 
 
 @media(width<=1536px){
@@ -565,7 +597,15 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     }
     
     h1{
-        font-size:3rem;
+        font-size:4rem;
+    }
+
+    .hero-text p{
+        width:40ch;
+    }
+
+    .hero-button-row button{
+        font-size:1.5rem;
     }
     .goals-and-plans{
         display:flex;
@@ -574,14 +614,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 
 
     
-    
 
-
-    
-
-    .navbar{
-        width:100%;
-    }
 
     .goals-and-plans-main{
         text-align:left;
@@ -589,10 +622,16 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     }
 
 
- .hero-container ,.origin-header ,.goals-and-plans-container , .text-wrapper, .members-header, .members-cards-container{
+ .navbar,.origin-header, .hero-container  ,.goals-and-plans-container , .text-wrapper, .members-header, .members-cards-container{
         width:1280px;
     }
 
+
+
+
+.members-cards-container{
+    padding:4.5rem 0;
+}
 
  
     .goals-and-plans-container{
@@ -617,9 +656,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 
 
 
-.collapsible label{
-    font-size:1.5rem;
-}
+
     .collapsible-label div{
         margin-left:5em;
         }
@@ -631,18 +668,20 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 .members-cards, .members-cards-rep{
     width:300px;
 }
+.members-container h4{
+    font-weight:600;
+}
+
 
 
 }
 
 
 @media(width<=1280px){
- .hero-container ,.origin-header ,.goals-and-plans-container , .text-wrapper, .members-header,  .members-cards-container{
+    .navbar, .hero-container ,.origin-header ,.goals-and-plans-container , .text-wrapper, .members-header,  .members-cards-container{
     width:1024px;
     }
-    .navbar{
-        width:100%;
-    }
+
     .goals-and-plans-container{
         max-width:1024px;
         justify-content: space-around;
@@ -668,7 +707,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 }
 
 @media (max-width:1024px){
- .hero-container ,.origin-header ,.goals-and-plans-container , .text-wrapper, .members-cards-container, .members-header{
+    .navbar, .hero-container ,.origin-header ,.goals-and-plans-container , .text-wrapper, .members-cards-container, .members-header{
         max-width:768px;
     }
 
@@ -700,35 +739,56 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     height:250px;
 }
 
-.members-cards-container h4{
+.members-cards h4{
     font-size:0.9rem;
 
 }
-.members-cards-container h3{
+.members-cards h3{
     font-size: 0.875rem;
 
 }
 
+.members-rep-img-bottom h3{
+    font-size: 0.7rem;
+}
+
+.members-rep-img-bottom h4{
+    margin-top:0.5rem;
+    font-size:0.85rem;
+}
+
 .members-header p{
-    font-size:1.5rem;
+    font-size:1.6rem;
     width:auto;
 }
+
+
+
 }
 
-
+/* enter tablet */
 @media (width<=768px){
-    .goals-and-plans-container, .text-wrapper,.members-header{
+    p{
+        font-size:1.75rem;
+    }
+    
+    h1{
+        font-size:3rem;
+    }
+
+    .hero-text{
+        font-size:1.5rem;
+    }
+    .navbar,.goals-and-plans-container, .text-wrapper,.members-header,.members-cards-container, .hero-container,.origin-header{
         max-width:640px;
-        
+
     }
 
     .goals-and-plans-title{
         font-size:2.5rem;
     }
 
-    .collapsible label{
-        font-size:1em;
-}
+
 
 .collapsible-text{
     font-size:1rem;
@@ -742,15 +802,68 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     max-height:0.1px;
 }
 
+.members-cards,.members-cards-rep{
+    height:fit-content;
+}
+.members-cards-row1, .members-cards-row2, .members-cards-row3, .members-cards-row4{
+    justify-content:center;
+    gap:1.5rem;
+padding:0;
 }
 
+.members-cards{
+    height:250px;
+}
+.members-cards-rep{
+    padding:15px 15px;
+
+}
+.members-cards h4{
+    font-size:0.86rem;
+    font-weight: 600;
+    margin-top:0.3rem;
+}
+.members-cards h3{
+    font-size: 0.8rem;
+}
+.members-img-rep{
+    width:30px;
+    height:30px;
+}
+.members-rep-img-bottom h3{
+    font-size:0.55rem;
+}
+
+.members-rep-img-bottom h4{
+    font-size:0.75rem;
+}
+.members-header p{
+    font-size:1.3rem;
+}
+
+}
 
 @media (width<=640px){
-    .goals-and-plans-container ,.text-wrapper ,.members-cards-container, .members-header{
+    p{
+        font-size:1.2rem;
+    }
+    
+    h1{
+        font-size:2.6rem;
+    }
+    .navbar, .goals-and-plans-container ,.text-wrapper ,.members-cards-container, .members-header,.hero-container,.hero-content, .origin-header{
         max-width:475px;
         flex-direction:column;
 }
-
+.hero-button-row{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.hero-button-row button{
+    font-size:1.3rem;
+    width:200px;
+}
 .goals-and-plans-main {
     width:auto;
 }
@@ -789,18 +902,52 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 .members-cards-row3, .members-cards-row4{
     gap:1.3rem;
 }
-
 .members-container h3{
     font-size:0.72rem;
 }
+
+.members-container h4{
+    font-size:1rem;
+}
+.yellowbob{
+    transform:scale(0.7);
+    transform:translateY(-0.01%);
+    left:-5%;
+
+}
+
 }
 
 @media( width<=475px){
-    .goals-and-plans-container, .text-wrapper, .members-cards-container,.members-header{
+    .navbar,.goals-and-plans-container, .text-wrapper, .members-cards-container,.members-header,.hero-container,.origin-header{
         width:100%;
     }
     .members-img-rep{
         width:40px;
         height:40px;
     }
+
+    .members-cards, .members-cards-rep{
+        width:250px;
+    }
+    .members-main{
+        font-size:0.9rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+
+    .hero-text p{
+        width:auto;
+    }
+
+    .yellowbob{
+        left:-20%;
+        transform:translateY(-0.01%);
+    }
+    footer {
+        line-height:1.5rem;
+    }
+
+
 }
