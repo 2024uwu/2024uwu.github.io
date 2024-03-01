@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -187,7 +188,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 }
 
 .origin{
-    padding-top:2rem;
+    padding-top:3rem;
 }
 .origin-header{
     text-align:center;
@@ -548,6 +549,11 @@ transform:rotate(-2deg);
     font-weight: 600;
 }
 
+.members-header p{
+    font-size:1.8rem;
+}
+
+
 footer{
     background-color: var(--clr-yellow);
     padding:1.5rem 0;
@@ -747,9 +753,6 @@ footer p{
 @media (width<=768px){
    
 
-    .hero-text{
-        font-size:1.5rem;
-    }
     .navbar,.goals-and-plans-container, .text-wrapper,.members-header,.members-cards-container, .hero-container,.origin-header{
         max-width:640px;
 
@@ -760,9 +763,11 @@ footer p{
     }
 
 
-
+.collapsible-label{
+    font-size:0.9em;
+}
 .collapsible-text{
-    font-size:1rem;
+    font-size:0.9em;
 }
 
 .goals-and-plans-main{
