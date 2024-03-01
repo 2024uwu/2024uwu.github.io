@@ -32,3 +32,24 @@ $(document).ready(function(){
     });
     
 })
+
+const hamburger = document.querySelector(".hamburger");
+const navmenu = document.querySelector(".navlinks")
+const logo = document.querySelector(".logo");
+const body = document.querySelector(".body");
+
+hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("active");
+    navmenu.classList.toggle("active");
+    logo.classList.toggle("active");
+    body.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=>{
+    hamburger.classList.remove("active");
+    navmenu.classList.remove("active");
+}
+))
+
+
+let dakrmode = localStorage.getItem('darkmode');
