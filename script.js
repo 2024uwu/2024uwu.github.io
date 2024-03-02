@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     // Initialize the Slick carousel
     $('.img-slick').slick({
@@ -18,7 +20,8 @@ $(document).ready(function(){
 
                 }
             }
-        ] 
+        ]
+    })
     });
 
     // Initialize the Slick carousel for text
@@ -30,26 +33,36 @@ $(document).ready(function(){
         fade: true,
         asNavFor: '.img-slick',
     });
-    
-})
 
-const hamburger = document.querySelector(".hamburger");
-const navmenu = document.querySelector(".navlinks")
-const logo = document.querySelector(".logo");
-const body = document.querySelector(".body");
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.querySelector(".navbutton")
 
-hamburger.addEventListener("click", ()=>{
-    hamburger.classList.toggle("active");
-    navmenu.classList.toggle("active");
-    logo.classList.toggle("active");
-    body.classList.toggle("active");
-})
+console.log(darkMode);
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=>{
-    hamburger.classList.remove("active");
-    navmenu.classList.remove("active");
+const enableDarkMode = () => {
+    document.body.classList.add("darkMode");
+
+    localStorage.setItem("darkMode","enabled");
 }
-))
 
+const disableDarkmode =() =>{
+    document.body.classList.remove("darkMode");
+    localStorage.setItem("darkMode", null);
 
-let dakrmode = localStorage.getItem('darkmode');
+}
+
+if(darkMode === "enabled"){
+    enableDarkMode();
+}
+darkModeToggle.addEventListener("click", ()=> {
+    darkMode = localStorage.getItem("darkMode");
+    if (darkMode !== "enabled"){
+        enableDarkMode();
+        console.log(darkMode);
+    } else{
+        disableDarkmode()
+        console.log(darkMode);
+    }
+
+})
+
