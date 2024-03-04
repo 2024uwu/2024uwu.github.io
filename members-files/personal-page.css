@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"cabin";
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --clr-yellow:#F7CF1C;
+    --clr-blue:#597CEB;
+    --clr-purple:#A555EC;
+    --clr-text:#050C10;
+    --clr-bg:#FFFEF5;    
+
+}
+html{
+    background-color: var(--clr-bg);
+}
+html::-webkit-scrollbar{
+    display:none;
+}
+
+
+.darkmode{
+    --clr-textdark:#EFF6FA;
+    --clr-bgdark:#0A0900;
+    --clr-bluedark:#1436A3;
+    --clr-yellowdark:#E2BA08;
+    --clr-purpledark:#6313AA;
+
+}
+
+.navbar, .member-container, .about-container , .reason-container, .vote-container, .contacts-container{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo svg{
+    transform: scale(1.5);
+}
+.navbar-container{
+    border-bottom:2px solid var(--clr-text);
+    display:flex;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:2rem 0;
+
+}
+
+.navbar ul{
+    display: flex;
+    gap:1.5em;
+    list-style:none;
+    
+}
+
+.navlinks{
+display:flex;
+    align-items:center;
+    
+}
+
+.nav-right{
+    display:flex;
+}
+
+
+.navbar a{
+    font:cabin;
+    color:var(--clr-text);
+    font-size: 1.5rem;
+}
+
+.member-container{
+    text-align:center;
+    margin-top:4rem;
+}
+.header-title{
+    text-transform: capitalize;
+}
+.header-main{
+    text-transform: capitalize;
+    margin-top:1rem;
+}
+
+.about-container{
+    display:flex;
+    margin-top:4rem;
+}
+.about-image{
+    width:400px;
+    height:400px;
+    background-color:grey;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid var(--clr-text);
+
+}
+.about-image svg{
+    width:100%;
+object-fit:cover;
+
+}
+.about-main{
+    flex:1;
+    padding:2rem 1rem 2rem 4rem ;
+}
+.about-main-text{
+    margin-top:1.1rem;
+}
+
+
+.reason-subheading ,.vote-subheading{
+    text-align:center;
+}
+
+.reason-text, .vote-text{
+    text-align:center;
+    margin-top:1.1rem;
+}
+
+.vote-container{
+    border-bottom:1px solid var(--clr-text);
+    padding-bottom:4rem;
+}
+.contacts-container{
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.contacts a{
+    text-decoration:none;
+    color:var(--clr-text);
+}
+.contacts-title{
+    text-transform:capitalize;
+    text-align:center;
+}
+
+.contacts-row1{
+    margin-top:2rem;
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+}
+
+.instagram, .discord, .gmail ,.whatsapp{
+    display:flex;
+    gap:1rem;
+    padding:20px;
+    border:1px solid var(--clr-text);
+    border-radius:20px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.title{
+    text-transform:uppercase;
+    font-weight:400;
+    letter-spacing: 1.8px;
+    color:var(--clr-text);
+}
+.acc{
+    font-weight: 500;
+}
+
+
+footer{
+    background-color: var(--clr-yellow);
+    padding:1.5rem 0;
+    text-align: center;
+    border-top:1px solid var(--clr-text);
+}
+
+
+
+@media(width<=1586px){
+    .navbar, .member-container, .about-container , .reason-container, .vote-container, .contacts-container{
+        width:1280px;
+    }
+
+
+    p{
+        font-size:1.5rem;
+    }
+    
+    h1{
+        font-size:4rem;
+    }
+
+    h2{
+        font-size:2.5rem;
+    }
+
+    h3{
+        font-size:1.1rem;
+    }
+
+    h4{
+        font-size:1.3rem;
+    }
+    .contacts svg{
+        width:45px;
+    }
+    .navbar a{
+        font-size: 1.5rem;
+    }
+
+    .reason-container, .vote-container{
+        margin-top:6rem;
+        padding:20px;
+        border:2px solid red;
+    }
+}
+
+@media(width<=1280px){
+    .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
+        width:1024px;
+    }
+    .about-image svg{
+        width:360px;
+        height:360px;
+    }
+    
+    .about-image{
+        width:360px;
+        height:360px;
+    }
+   
+}
+
+@media(width<=1024px){
+    .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
+        width:768px;
+    }
+    p{
+        font-size:1.3rem;
+    }
+    
+    h1{
+        font-size:3rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+    .about-image svg{
+        width:320px;
+        height:320px;
+    }
+    
+    .about-image{
+        width:320px;
+        height:320px;
+    }
+    .navbar a{
+        font-size: 1.3rem;
+    }
+
+    .logo svg{
+        transform: scale(1.3);
+    }
+    .reason-container, .vote-container{
+        margin-top:3rem;
+    }
+}
+
+@media(width<=768px){
+    .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
+        width:640px;
+    }
+
+    .about-image svg{
+        width:260px;
+        height:260px;
+    }
+    
+    .about-image{
+        width:260px;
+        height:260px;
+    }
+    .about-main{
+        padding:2rem;
+    }
+    h1{
+        font-size:2.5rem;
+    }
+
+    h2{
+        font-size:1.7rem;
+    }
+    
+    h3{
+        font-size:0.8rem;
+    }
+
+    h4{
+        font-size:1rem;
+    }
+    .contacts svg{
+        width:35px;
+    }
+
+    p{
+        font-size:1.1rem;
+    }
+
+    
+
+}
+
+
+@media (width<=640px){
+    .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
+        width:475px;
+}
+p{
+    font-size:0.8rem;
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.5rem;
+}
+.about-main{
+    padding:1em;
+}
+
+.about-image svg{
+    width:250px;
+    height:250px;
+}
+
+.about-image{
+    width:250px;
+    height:250px;
+}
+.contacts-row1{
+    flex-direction: column;
+}
+
+}
+
+@media(width<=475px){
+    .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
+        width:100%;
+}
+
+.about-main{
+    padding:1em;
+}
+
+.about-image svg{
+    width:200px;
+    height:200px;
+}
+
+.about-image{
+    width:200px;
+    height:200px;
+}
+
+}
