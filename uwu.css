@@ -290,7 +290,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     transform: scale(0.8, 0.8);
     transition: transform 0.4s;
     display:flex;
-    position:relative;
+    position: relative;
 }
 
 .card-img-container img {
@@ -300,10 +300,10 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
     border-radius: 1.25rem;
 }
 
+
 .card-img-dark{
     position: absolute;
     top:var(--origin-cards-theme);
-    display:none;
 }
 
 .text-wrapper {
