@@ -26,7 +26,7 @@
     --members-rep-card-shadow-hover:0px 5px 10px 0 rgba(0,0,0,0.4);
     --clr-collapsible-label-bg:linear-gradient(#FFFEF5,#fffef5) padding-box,
     linear-gradient(#050C10,#050C10) border-box;
-    --origin-cards-theme:-100%;
+    --origin-cards-theme:-150%;
     /* bg img */
     --bg-image1536:url(light_mode/1536.jpg);
     --bg-image1280:url(light_mode/1280.jpg);
