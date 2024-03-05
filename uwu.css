@@ -52,7 +52,7 @@
     --clr-yellow:#E2BA08;
     --clr-purple:#6313AA;
     /* specific use */
-    --clr-bgdropdown:#1A1A1A;
+    --clr-bgdropdown:lab(6.77,0,0);
     --clr-title_span:#E2BA08;
     --clr-footer: linear-gradient(to right,#1436A3,#6313AA);
     --clr-footer-border-top:linear-gradient(to right,rgba(255,255,255,0.2),rgba(255, 255, 255,0.08));
@@ -379,7 +379,7 @@ box-shadow: 0px 4px 5px rgba(165,85,236,0.5);
 }
 .goals-and-plans{
     padding-bottom:3rem;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-bgdropdown);
     width:100vw;
     display:flex;
 }
