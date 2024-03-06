@@ -47,12 +47,12 @@
 .darkMode{
     /* main colours */
     --clr-text:#EFF6FA;
-    --clr-bg:rgb(26,26,26);
+    --clr-bg:rgb(21,21,21);
     --clr-blue:#1436A3;
     --clr-yellow:#E2BA08;
     --clr-purple:#6313AA;
     /* specific use */
-    --clr-bgdropdown:rgb(26,26,26);
+    --clr-bgdropdown:rgb(21,21,21);
     --clr-title_span:#E2BA08;
     --clr-footer: linear-gradient(to right,#1436A3,#6313AA);
     --clr-footer-border-top:linear-gradient(to right,rgba(255,255,255,0.2),rgba(255, 255, 255,0.08));
@@ -119,7 +119,7 @@ body{
     transform: scale(1.5);
 }
 .navbar-container{
-    border-bottom:1px solid #1A1A1A;
+    border-bottom:1px solid rgb(21,21,21);
 }
 .navbar{
     display:flex;
