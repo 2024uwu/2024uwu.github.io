@@ -47,12 +47,12 @@
 .darkMode{
     /* main colours */
     --clr-text:#EFF6FA;
-    --clr-bg:lab(6.77,0,0);
+    --clr-bg:rgb(26,26,26);
     --clr-blue:#1436A3;
     --clr-yellow:#E2BA08;
     --clr-purple:#6313AA;
     /* specific use */
-    --clr-bgdropdown:lab(6.77,0,0);
+    --clr-bgdropdown:rgb(26,26,26);
     --clr-title_span:#E2BA08;
     --clr-footer: linear-gradient(to right,#1436A3,#6313AA);
     --clr-footer-border-top:linear-gradient(to right,rgba(255,255,255,0.2),rgba(255, 255, 255,0.08));
