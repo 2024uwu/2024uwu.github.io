@@ -1094,6 +1094,7 @@ padding:0;
     flex-direction:column;
     align-items:center;
     justify-content: center;
+
 }
 
 .members-cards-row1,.members-cards-row2{
@@ -1104,6 +1105,10 @@ padding:0;
 }
 .members-cards-row3, .members-cards-row4{
     gap:1.3rem;
+}
+
+.members-cards-row4{
+    margin-top:-1.2rem;
 }
 .members-container h3{
     font-size:0.72rem;
