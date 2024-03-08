@@ -15,6 +15,7 @@
     --clr-text:#050C10;
     --clr-bg:#FFFEF5;  
     /* specific use */
+    --clr-navbar-scroll:rgba(255,254,245,0.7);
     --clr-bgdropdown:#597CEB;
     --clr-title_span:#A555EC;
     --clr-footer:linear-gradient(to right, #F7CF1C, #F7CF1C);
@@ -52,6 +53,7 @@
     --clr-yellow:#E2BA08;
     --clr-purple:#6313AA;
     /* specific use */
+    --clr-navbar-scroll:rgba(26,26,26,0.7);
     --clr-bgdropdown:rgb(26,26,26);
     --clr-title_span:#E2BA08;
     --clr-footer: linear-gradient(to right,#1436A3,#6313AA);
@@ -106,7 +108,10 @@ body{
 
 .hero{
     width:100vw;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-navbar-scroll);
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 .logo{
