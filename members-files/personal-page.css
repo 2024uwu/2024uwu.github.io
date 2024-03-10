@@ -15,6 +15,7 @@
     --clr-purple:#A555EC;
     --clr-text:#050C10;
     --clr-bg:#FFFEF5;    
+    --clr-navbar-scroll:rgba(255,254,245,0.7);
     --about-img-border:#050C10;
     --about-img-dark-display:none;
     --about-img-light-display:block;
@@ -30,6 +31,7 @@
     --clr-blue:#1436A3;
     --clr-yellow:#E2BA08;
     --clr-purple:#6313AA;
+    --clr-navbar-scroll:rgba(26,26,26,0.7);
     --about-img-border:rgba(255,255,255,0.2);
     --about-img-dark-display:block;
     --about-img-light-display:none;
@@ -46,6 +48,13 @@ html::-webkit-scrollbar{
 
 body{
     background-color:var(--clr-bg);
+}
+
+.hero{
+    position:sticky;
+    top:0;
+    background-color:var(--clr-navbar-scroll);
+
 }
 
 .navbutton{
@@ -72,7 +81,6 @@ body{
     transform: scale(1.5);
 }
 .navbar-container{
-    background-color: var(--clr-bg);
     border-bottom:var(--border-px) solid #1a1a1a;
     display:flex;
 }
