@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family:"cabin";
     scroll-behavior: smooth !important;
+    scroll-margin-block-start: 4.5rem;
 }
 
 
