@@ -54,7 +54,7 @@
     --clr-yellow:#E2BA08;
     --clr-purple:#6313AA;
     /* specific use */
-    --clr-navbar-scroll:rgba(26,26,26,0.9);
+    --clr-navbar-scroll:rgba(21,21,21,0.9);
     --clr-bgdropdown:var(--clr-bg);
     --clr-title_span:#E2BA08;
     --clr-footer: linear-gradient(to right,#1436A3,#6313AA);
