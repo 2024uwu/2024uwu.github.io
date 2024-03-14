@@ -51,9 +51,7 @@ body{
 }
 
 .hero{
-    position:sticky;
-    top:0;
-    background-color:var(--clr-navbar-scroll);
+    background-color:var(--clr-bg);
 
 }
 
@@ -172,6 +170,12 @@ display:flex;
     color:var(--clr-text);
 }
 
+.reason-container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
 
 .vote-text{
     margin-bottom:4rem;
@@ -251,8 +255,8 @@ footer p{
     }
 
 
-    p, a{
-        font-size:1.5rem;
+    p, a, li{
+        font-size:1.4rem;
     }
     
     h1{
@@ -310,8 +314,8 @@ footer p{
     .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
         width:768px;
     }
-    p, a{
-        font-size:1.3rem;
+    p, a, li{
+        font-size:1rem;
     }
     
     h1{
@@ -375,8 +379,8 @@ footer p{
         width:35px;
     }
 
-    p, a{
-        font-size:1.1rem;
+    p, a, li{
+        font-size:0.9rem;
     }
 
     .vote-container, .reason-container {
@@ -392,8 +396,8 @@ footer p{
     .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
         width:475px;
 }
-p, a{
-    font-size:0.9rem;
+p, a, li{
+    font-size:1rem;
 }
 
 h1{
@@ -444,8 +448,8 @@ margin-top:0.5rem;
     .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
         width:375px;
 }
-p a{
-    font-size:1.2rem;
+p,a, li{
+    font-size:1rem;
 
 }
 .about-main{
@@ -468,7 +472,7 @@ p a{
     .navbar,.member-container, .about-container, .reason-container, .vote-container, .contacts-container{
         width:320px;
 }
-    p{
+    p, a, li{
         font-size: 0.8rem;
     }
     h3{
