@@ -76,8 +76,8 @@
     --bg-image768:url(dark_mode/BG-768.jpg);
     --bg-image640:url(dark_mode/BG-640.jpg);
     --bg-image475:url(dark_mode/BG-475.jpg);
-    --members-bg:url(dark_mode/members_dark.png);
-    --members-bg-mobile:url(dark_mode/members_dark5.png);
+    --members-bg:url(dark_mode/members_dark5.webp);
+    --members-bg-mobile:url(dark_mode/members_dark5.webp);
     /* icon display */
     --moondisplay: none;
     --sundisplay:block;
