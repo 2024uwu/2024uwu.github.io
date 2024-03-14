@@ -38,6 +38,7 @@
     --bg-image640:url(light_mode/640.jpg);
     --bg-image475:url(light_mode/475.jpg);
     --members-bg:none;
+    --members-bg-mobile:none;
     /* icon display */
     --moondisplay: block;
     --sundisplay:none;
@@ -76,6 +77,7 @@
     --bg-image640:url(dark_mode/BG-640.jpg);
     --bg-image475:url(dark_mode/BG-475.jpg);
     --members-bg:url(dark_mode/members_dark.png);
+    --members-bg-mobile:url(dark_mode/members_dark5.png);
     /* icon display */
     --moondisplay: none;
     --sundisplay:block;
@@ -189,7 +191,6 @@ display:flex;
 
 .hero-text{
     margin-top:0.5rem;
-    line-height:2rem;
     color:var(--clr-text);
 }
 
@@ -1198,7 +1199,16 @@ padding:0;
     footer {
         line-height:1.5rem;
     }
-
+    .members-cards-container{
+        margin-top:3rem;
+        display:flex;
+        flex-direction:column;
+        gap:2.5rem;
+        background-image: var(--members-bg-mobile);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 
 }
 
