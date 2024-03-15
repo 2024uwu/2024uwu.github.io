@@ -139,6 +139,11 @@ body {
   display: flex;
   margin-top: 4rem;
 }
+.about-main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
 .about-image {
   width: 400px;
   height: 400px;
