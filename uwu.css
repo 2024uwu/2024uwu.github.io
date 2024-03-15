@@ -767,11 +767,11 @@ footer p {
 
 @media (width<=1536px) {
   p, .navbar a{
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   footer p{
