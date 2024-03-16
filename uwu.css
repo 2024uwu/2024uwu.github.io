@@ -34,8 +34,8 @@
     linear-gradient(#050c10, #050c10) border-box;
   --origin-cards-theme: -150%;
   /* bg img */
-  --bg-image2560: url(light_mode/2560.webp);
-  --bg-image1920: url(light_mode/1920.webp);
+  --bg-image2560: url(light_mode/BG\ 2560.jpg);
+  --bg-image1920: url(light_mode/BG\ 1920.jpg);
   --bg-image1536: url(light_mode/1536.jpg);
   --bg-image1280: url(light_mode/1280.jpg);
   --bg-image1024: url(light_mode/1024.jpg);
@@ -87,8 +87,8 @@
       border-box;
   --origin-cards-theme: 0;
   /* bg img */
-  --bg-image2560: url(dark_mode/BG-2560.webp);
-  --bg-image1920: url(dark_mode/BG-1920.webp);
+  --bg-image2560: url(dark_mode/BG-2560.jpg);
+  --bg-image1920: url(dark_mode/BG-1920.jpg);
   --bg-image1280: url(dark_mode/BG-1280.jpg);
   --bg-image1536: url(dark_mode/BG-1536.jpg);
   --bg-image1024: url(dark_mode/BG-1024.jpg);
@@ -602,7 +602,6 @@ body {
 }
 
 .seperator {
-  height: var(--member-card-border-px);
   width: 100%;
   background: var(--clr-footer-border-top);
 }
@@ -662,8 +661,9 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 20rem;
+    padding-bottom:10rem;
     background-color: var(--clr-bg);
-    border-top: 1px solid #1a1a1a;
+    border-top: 3px solid #1a1a1a;
   }
   .navbar {
     padding: 6rem 3rem;
@@ -693,6 +693,8 @@ footer p {
     padding: 2rem 0;
   }
 
+  
+
   .slick-dots li {
     width: 50px;
   }
@@ -718,7 +720,9 @@ footer p {
     -moz-osx-font-smoothing: grayscale;
     margin-top: 2rem;
   }
-
+  .goals-and-plans{
+    padding:7rem 0 9rem;
+  }
   .goals-and-plans-categories {
     gap: 3.5rem;
   }
@@ -726,6 +730,7 @@ footer p {
     font-size: 2.5rem;
     padding: 2.5rem;
     border-radius: 30px;
+    border: calc(var(--member-card-border-px) + 2px) solid transparent;
   }
 
   .collapsible-text {
@@ -748,6 +753,10 @@ footer p {
 
   .collapsible input[type="checkbox"]:checked + .collapsible-label {
     border-radius: 30px 30px 0 0;
+  }
+
+  .members-header{
+    margin-top:7rem;
   }
   .members-cards-container {
     padding: 7rem 0;
@@ -801,7 +810,9 @@ footer p {
     width: 80px;
     height: 80px;
   }
-
+  .seperator{
+    height:calc(var(--member-card-border-px) + 5px);
+  }
   footer p {
     font-size: 2.2rem;
   }
@@ -809,6 +820,7 @@ footer p {
   footer {
     padding: 2.5rem 0;
   }
+
 }
 
 @media (width<= 1920px) {
@@ -997,6 +1009,7 @@ footer p {
     font-size: 1.5rem;
     padding: 1em;
     border-radius: 15px;
+    border: var(--member-card-border-px) solid transparent;
   }
 
   .collapsible-text {
@@ -1070,7 +1083,9 @@ footer p {
     width: 50px;
     height: 50px;
   }
-
+  .seperator{
+    height:var(--member-card-border-px);
+  }
   footer {
     padding: 1.5rem 0;
   }
