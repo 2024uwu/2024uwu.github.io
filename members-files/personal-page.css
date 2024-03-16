@@ -178,6 +178,12 @@ body {
   color: var(--clr-text);
 }
 
+.list{
+  color:var(--clr-text);
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+
 .reason-container {
   display: flex;
   flex-direction: column;
@@ -186,6 +192,7 @@ body {
 
 
 .seperator {
+  margin-top:4rem;
   height: var(--border-px);
   width: 100%;
   background: var(--clr-seperator);
