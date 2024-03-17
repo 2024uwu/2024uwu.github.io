@@ -138,11 +138,14 @@ body {
 .about-container {
   display: flex;
   margin-top: 4rem;
+  gap:3rem;
 }
 .about-main{
   display:flex;
   flex-direction:column;
   justify-content:center;
+  flex: 1;
+  color: var(--clr-text);
 }
 .about-image {
   width: 400px;
@@ -166,12 +169,6 @@ body {
   display: var(--about-img-light-display);
   fill: none;
 }
-.about-main {
-  flex: 1;
-  padding: 2rem 1rem 2rem 4rem;
-  color: var(--clr-text);
-}
-
 .reason-subheading,
 .vote-subheading {
   text-align: center;
@@ -407,9 +404,6 @@ margin-top:1.5rem;
   .about-image {
     width: 260px;
     height: 260px;
-  }
-  .about-main {
-    padding: 2rem;
   }
   h1 {
     font-size: 2.5rem;
