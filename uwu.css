@@ -500,6 +500,12 @@ body {
   height: 70%;
 }
 
+.members-img img{
+  width:inherit;
+  height:100%;
+  object-position:center;
+}
+
 .members-cards {
   border-color: var(--clr-member-card-border);
   border-width: var(--member-card-border-px);
@@ -811,7 +817,7 @@ footer p {
     height: 80px;
   }
   .seperator{
-    height:calc(var(--member-card-border-px) + 5px);
+    height:calc(var(--member-card-border-px) + 4px);
   }
   footer p {
     font-size: 2.2rem;
@@ -906,7 +912,7 @@ footer p {
   }
 
   .navbar {
-    padding: 2rem 1rem;
+    padding: 1.75rem 1rem;
   }
 
   .nav-menu {
@@ -949,6 +955,7 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 10rem;
+    padding-bottom:4rem;
     background-color: var(--clr-bg);
     border-top: 1px solid #1a1a1a;
   }
@@ -996,6 +1003,7 @@ footer p {
     width: 1280px;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom:3rem;
   }
 
   .goals-and-plans-categories {
@@ -1003,6 +1011,10 @@ footer p {
   }
   .goals-and-plans-title {
     font-size: 3.5rem;
+  }
+
+  .goals-and-plans{
+    padding: 0;
   }
 
   .collapsible label {
@@ -1033,7 +1045,12 @@ footer p {
   .collapsible input[type="checkbox"]:checked + .collapsible-label {
     border-radius: 15px 15px 0 0;
   }
-
+  .members-header{
+    margin-top:2rem;
+  }
+  .members-cards-container {
+    padding: 1.5rem 0 4rem;
+  }
   .members-cards,
   .members-cards-rep {
     width: 300px;
@@ -1069,7 +1086,7 @@ footer p {
   }
 
   .members-cards-row2 {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .members-cards-rep {
@@ -1322,6 +1339,10 @@ footer p {
 
   .members-rep-img-bottom h4 {
     font-size: 0.75rem;
+  }
+
+  .members-header{
+    margin-top:2rem;
   }
   .members-header p {
     font-size: 1.3rem;
