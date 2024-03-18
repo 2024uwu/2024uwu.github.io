@@ -23,6 +23,8 @@
   --clr-seperator: linear-gradient(#050c10, #050c10);
   --border-px: 1px;
   --clr-footer: linear-gradient(to right, #f7cf1c, #f7cf1c);
+  --pink:#f6c7b3;
+  --dos:	#98bad5;
 }
 .darkMode {
   --clr-text: #eff6fa;
@@ -49,6 +51,8 @@
   );
   --border-px: 3px;
   --clr-footer: linear-gradient(to right, #1436a3, #6313aa);
+  --pink:#FFD1dc;
+  --dos:#ffffb7;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -254,6 +258,22 @@ footer {
 
 footer p {
   color: var(--clr-text);
+}
+
+#uno{
+  color:var(--pink);
+}
+
+#dos{
+  color:var(--dos);
+}
+
+#tres{
+  color:#C3B1E1;
+}
+
+#quatro{
+  color:#acbda1;
 }
 
 @media (width<=1586px) {
