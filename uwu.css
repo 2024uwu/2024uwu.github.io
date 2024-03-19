@@ -288,13 +288,13 @@ body {
   transition: transform 0.4s;
   display: flex;
   position: relative;
+  overflow:hidden;
 }
 
 .card-img-container img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 1.25rem;
 }
 
 .card-img-dark {
@@ -625,6 +625,8 @@ footer p {
   display: flex;
   list-style: none;
 }
+
+
 
 @media (width<=2560px) {
   .navbar,
@@ -1418,8 +1420,9 @@ footer p {
     margin-top: 2.5rem;
   }
 
-  .card-img-container img {
+  .card-img-container {
     border-radius: 0px;
+    border:none;
   }
 
   .collapsible-label {
@@ -1522,10 +1525,6 @@ footer p {
   }
   .section {
     margin-top: 0;
-  }
-
-  .card-img-container img {
-    border-radius: 0px;
   }
   .goals-and-plans-container {
     text-align: center;
