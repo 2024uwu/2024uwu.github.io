@@ -190,10 +190,19 @@ body {
 .hero-container {
   display: flex;
   justify-content: center;
+  align-items:center;
+  height:calc(100vh * 0.65);
 }
+
+
 .hero-content {
   color: var(--clr-text);
   text-align: center;
+}
+
+.hero-title{
+  width:50%;
+  margin:0 auto;
 }
 
 .hero-text {
@@ -244,7 +253,7 @@ body {
 
 .origin-header {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   color: var(--clr-text);
 }
 
@@ -496,14 +505,14 @@ body {
 }
 
 .members-img {
-  background-color: grey;
   height: 70%;
+  display:flex;
+  justify-content: center;
 }
 
 .members-img img{
   width:inherit;
   height:100%;
-  object-position:center;
 }
 
 .members-cards {
@@ -626,6 +635,16 @@ footer p {
   list-style: none;
 }
 
+@keyframes scroll-fade{
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+    transition:all 0.3s ease-in;
+  }
+}
 
 
 @media (width<=2560px) {
@@ -1171,6 +1190,11 @@ footer p {
     max-width: 768px;
   }
 
+  .hero-title{
+    width:70%;
+    margin:0 auto;
+  }
+
   .blob-bg {
     background-image: var(--bg-image1024);
     background-size: 100% 100%;
@@ -1386,6 +1410,11 @@ footer p {
   .nav-menu {
     display: none;
   }
+
+  .hero-title{
+    width:100%;
+    margin:0 auto;
+  }
   .hero-button-row {
     flex-direction: column;
     justify-content: center;
@@ -1567,6 +1596,13 @@ footer p {
 }
 
 @media (width<=375px) {
+  h1{
+    font-size:2.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
   .navbar,
   .goals-and-plans-container,
   .text-wrapper,
@@ -1576,6 +1612,8 @@ footer p {
   .origin-header {
     width: 325px;
   }
+
+
   .collapsible-label div {
     margin: 1rem;
   }
