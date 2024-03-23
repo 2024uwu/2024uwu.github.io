@@ -664,6 +664,11 @@ footer p {
   list-style: none;
 }
 
+#code{
+  color:var(--clr-text);
+  text-decoration: none;
+}
+
 @keyframes scroll-fade{
   from{
     opacity:0;
