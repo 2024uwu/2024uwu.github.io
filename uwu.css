@@ -2,19 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "cabin";
-  scroll-behavior: smooth !important;
-  scroll-padding-top: 7.5rem;
+  font-family: cabin;
+  scroll-behavior: smooth!important;
+  scroll-padding-top: 7.5rem
 }
-
 :root {
-  /* main colours */
   --clr-yellow: #f7cf1c;
   --clr-blue: #597ceb;
   --clr-purple: #a555ec;
   --clr-text: #050c10;
   --clr-bg: #fffef5;
-  /* specific use */
   --clr-navbar-scroll: rgba(255, 254, 245, 0.9);
   --clr-bgdropdown: var(--clr-blue);
   --clr-title_span: #a555ec;
@@ -30,10 +27,8 @@
   --clr-member-card-boxshadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.1);
   --navbutton-shadow: rgba(0, 0, 0, 0.2);
   --members-rep-card-shadow-hover: 0px 3px 10px 0 rgba(0, 0, 0, 0.4);
-  --clr-collapsible-label-bg: linear-gradient(#fffef5, #fffef5) padding-box,
-    linear-gradient(#050c10, #050c10) border-box;
+  --clr-collapsible-label-bg: linear-gradient(#fffef5, #fffef5) padding-box,linear-gradient(#050c10, #050c10) border-box;
   --origin-cards-theme: -150%;
-  /* bg img */
   --bg-image2560: url(light_mode/BG\ 2560.jpg);
   --bg-image1920: url(light_mode/BG\ 1920.jpg);
   --bg-image1536: url(light_mode/1536.jpg);
@@ -44,21 +39,16 @@
   --bg-image475: url(light_mode/475.jpg);
   --members-bg: none;
   --members-bg-mobile: none;
-  /* icon display */
   --moondisplay: block;
   --sundisplay: none;
-  /* border width change */
-  --member-card-border-px: 1px;
+  --member-card-border-px: 1px
 }
-
 .darkMode {
-  /* main colours */
   --clr-text: #eff6fa;
   --clr-bg: rgb(21, 21, 21);
   --clr-blue: #1436a3;
   --clr-yellow: #e2ba08;
   --clr-purple: #6313aa;
-  /* specific use */
   --clr-navbar-scroll: rgba(21, 21, 21, 0.9);
   --clr-bgdropdown: var(--clr-bg);
   --clr-title_span: #e2ba08;
@@ -77,16 +67,12 @@
   --clr-collapsible-label-bg: linear-gradient(
         rgba(37, 37, 37, 1),
         rgba(37, 37, 37, 1)
-      )
-      padding-box,
-    linear-gradient(
+      ) padding-box,linear-gradient(
         110deg,
         rgba(255, 255, 255, 0.25),
         rgba(255, 255, 255, 0.08)
-      )
-      border-box;
+      ) border-box;
   --origin-cards-theme: 0;
-  /* bg img */
   --bg-image2560: url(dark_mode/BG-2560.jpg);
   --bg-image1920: url(dark_mode/BG-1920.jpg);
   --bg-image1280: url(dark_mode/BG-1280.jpg);
@@ -97,196 +83,160 @@
   --bg-image475: url(dark_mode/BG-475.jpg);
   --members-bg: url(dark_mode/members_dark5.webp);
   --members-bg-mobile: url(dark_mode/members_dark5.webp);
-  /* icon display */
   --moondisplay: none;
   --sundisplay: block;
-  /* border width change */
-  --member-card-border-px: 3px;
+  --member-card-border-px: 3px
 }
-
 html {
   background-color: var(--clr-bg);
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth!important
 }
-
 html::-webkit-scrollbar {
-  display: none;
+  display: none
 }
 body {
   background-color: var(--clr-bg);
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth!important
 }
-
-.navbar,
-.hero-container,
-.origin-header,
 .goals-and-plans-container,
+.hero-container,
+.members-cards-container,
 .members-header,
-.members-cards-container {
+.navbar,
+.origin-header {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-
+  padding-left: .5rem;
+  padding-right: .5rem
 }
-
 .hero {
   width: 100vw;
   background-color: var(--clr-navbar-scroll);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 100
 }
-
 .logo {
   opacity: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center
 }
-
 .navlinks {
   display: flex;
-  align-items: center;
+  align-items: center
 }
-
 .nav-right {
-  display: flex;
+  display: flex
 }
-
 .navbar a {
   font: cabin;
   text-decoration: none;
   color: var(--clr-text);
-  text-transform: lowercase;
+  text-transform: lowercase
 }
-
 .navbutton {
   background-color: transparent;
   border: 1px solid var(--clr-text);
   border-radius: 180px;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
-
 .sun {
-  display: var(--sundisplay);
+  display: var(--sundisplay)
 }
-
 .moon {
-  display: var(--moondisplay, none);
+  display: var(--moondisplay,none)
 }
 .navbutton:hover {
-  box-shadow: 0 3px 5px var(--navbutton-shadow);
+  box-shadow: 0 3px 5px var(--navbutton-shadow)
 }
-
 .hero-container {
   display: flex;
   justify-content: center;
-  align-items:center;
-  height:calc(100vh * 0.65);
+  align-items: center;
+  height: calc(100vh * .65)
 }
-
-
 .hero-content {
   color: var(--clr-text);
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center
 }
-
-.hero-title, .members-main{
-  width:60%;
+.hero-title,
+.members-main {
+  width: 60%
 }
-
-
-
-
-
-.hero-text{
-  width:80%;
-}
-
 .hero-text {
-  margin-top: 0.5rem;
-  color: var(--clr-text);
+  width: 80%
 }
-
+.hero-text {
+  margin-top: .5rem;
+  color: var(--clr-text)
+}
 .hero-button-row {
   display: flex;
   justify-content: center;
-  align-items: bottom;
+  align-items: bottom
 }
-
 .hero-button-row a {
   cursor: pointer;
   color: #eff6fa;
   border: none;
-  transition: all 0.2s ease;
-  text-decoration: none;
+  transition: all .2s ease;
+  text-decoration: none
 }
-
 .hero-button1 {
   background-color: var(--clr-blue);
-  box-shadow: 0 4px 5px rgba(89, 124, 235, 0.4);
+  box-shadow: 0 4px 5px rgba(89,124,235,.4)
 }
-
 .hero-button1:hover {
-  box-shadow: 0 6px 8px rgba(89, 124, 235, 0.5);
+  box-shadow: 0 6px 8px rgba(89,124,235,.5)
 }
-
 .hero-button1:active {
   box-shadow: none;
-  background-color: #4269e4;
+  background-color: #4269e4
 }
-
 .hero-button2 {
   background-color: var(--clr-purple);
-  box-shadow: 0px 4px 5px rgba(165, 85, 236, 0.5);
+  box-shadow: 0 4px 5px rgba(165,85,236,.5)
 }
-
 .hero-button2:hover {
-  box-shadow: 0 6px 8px rgba(165, 85, 236, 0.5);
+  box-shadow: 0 6px 8px rgba(165,85,236,.5)
 }
 .hero-button2:active {
   box-shadow: none;
-  background-color: #8436c9;
+  background-color: #8436c9
 }
-
 .origin-header {
   text-align: center;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 1.5rem;
-  color: var(--clr-text);
+  color: var(--clr-text)
 }
-
 .origin-title {
-  font-weight: bold;
+  font-weight: 700
 }
 .origin-title span {
-  color: var(--clr-title_span);
+  color: var(--clr-title_span)
 }
-
 .origin-header p {
   font-weight: 400;
-  margin-top: 1rem;
+  margin-top: 1rem
 }
-
-.origin-text{
-  width:65%;
+.origin-text {
+  width: 65%
 }
-
 .section {
   margin-top: 3rem;
   padding-bottom: 2rem;
@@ -295,15 +245,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden
 }
-
 .img-wrapper {
   width: 180%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row
 }
-
 .card-img-container {
   width: 100%;
   height: auto;
@@ -311,118 +259,97 @@ body {
   border-radius: 1.25rem;
   border: 1px solid #050c10;
   margin: 0 20px;
-  transform: scale(0.8, 0.8);
-  transition: transform 0.4s;
+  transform: scale(.8,.8);
+  transition: transform .4s;
   display: flex;
   position: relative;
-  overflow:hidden;
+  overflow: hidden
 }
-
 .card-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: contain
 }
-
 .card-img-dark {
   position: absolute;
-  top: var(--origin-cards-theme);
+  top: var(--origin-cards-theme)
 }
-
 .text-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: row
 }
-
 .card-text {
   width: 50%;
   padding: 0 1rem;
-  color: var(--clr-text);
+  color: var(--clr-text)
 }
-
 .card-text p {
   text-align: center;
   margin: 0 auto;
-  max-width: 30ch;
+  max-width: 30ch
 }
-
 .slick-slide {
-  opacity: 0.5;
-  margin: 0 1rem;
+  opacity: .5;
+  margin: 0 1rem
 }
-
 .slick-current {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1)
 }
-
 .slick-list {
-  margin: 0 -1rem;
+  margin: 0 -1rem
 }
-
 .slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: var(--clr-text);
+  opacity: .75;
+  color: var(--clr-text)
 }
-
 .slick-next,
 .slick-prev {
-  visibility: hidden;
+  visibility: hidden
 }
 .goals-and-plans {
   padding-bottom: 3rem;
   background-color: var(--clr-bgdropdown);
   width: 100vw;
-  display: flex;
+  display: flex
 }
-
 .goals-and-plans-container {
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around
 }
-
 .goals-and-plans-content {
-  color: #eff6fa;
+  color: #eff6fa
 }
-
-.goals-and-plans-content{
-  width:50%;
+.goals-and-plans-content {
+  width: 50%
 }
-
 .goals-and-plans-label {
-  margin-top: 1.5rem;
+  margin-top: 1.5rem
 }
-
 .goals-and-plans-title {
   margin-top: 1.5rem;
-  white-space:nowrap;
+  white-space: nowrap
 }
-
 .goals-and-plans-main {
   margin-top: 1rem;
-  width:90%;
+  width: 90%
 }
-
 .goals-and-plans-categories {
   display: flex;
   flex-direction: column;
-  width:50%;
-
-  padding:1rem;
+  width: 50%;
+  padding: 1rem
 }
-
 .collapsible {
   overflow: hidden;
-  position: relative;
+  position: relative
 }
-
 .collapsible-label span {
-  margin-right: 0.3em;
+  margin-right: .3em
 }
-
 .collapsible label {
   position: relative;
   background: var(--clr-collapsible-label-bg);
@@ -430,120 +357,101 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
   border: var(--member-card-border-px) solid transparent;
   width: 100%;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.15);
   white-space: nowrap;
-  position:relative;
+  position: relative
 }
-
 .collapsible-label svg {
   border-radius: 180px;
-  position:absolute;
-  right:2rem;
-  top:2.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2.5rem;
   color: var(--clr-text);
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out
 }
-
 .collapsible-text {
   max-height: 1px;
   overflow: hidden;
-
   position: relative;
   opacity: 0;
   width: auto;
   top: -15%;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
   background: var(--clr-collapsible-label-bg);
   border: var(--member-card-border-px) solid transparent;
   color: var(--clr-text);
   border-top: none;
   flex: 1;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.15)
 }
-
-.collapsible input[type="checkbox"]:checked ~ .collapsible-text {
+.collapsible input[type=checkbox]:checked ~ .collapsible-text {
   max-height: fit-content;
   opacity: 1;
   top: 0;
-  left: 0;
+  left: 0
 }
-
-.collapsible input[type="checkbox"]:checked + .collapsible-label {
-  box-shadow: none;
+.collapsible input[type=checkbox]:checked + .collapsible-label {
+  box-shadow: none
 }
-
-.collapsible input[type="checkbox"]:checked + .collapsible-label svg {
-  transform: rotate(180deg);
+.collapsible input[type=checkbox]:checked + .collapsible-label svg {
+  transform: rotate(180deg)
 }
-
 .collapsible-text ul {
-  padding: 0 2em;
+  padding: 0 2em
 }
-
 .collapsible input {
-  display: none;
+  display: none
 }
-
 .members {
   background-color: var(--clr-bg);
   width: 100vw;
-  padding-top: 4rem;
+  padding-top: 4rem
 }
 .members-label {
-  color: var(--clr-text);
+  color: var(--clr-text)
 }
 .members-header {
   text-align: center;
   justify-content: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column
 }
-
 .members-header h1 {
-  color: var(--clr-text);
+  color: var(--clr-text)
 }
 .members-header span {
-  background-image: linear-gradient(
-    to right,
-    var(--clr-blue),
-    var(--clr-purple)
-  );
+  background-image: linear-gradient(to right,var(--clr-blue),var(--clr-purple));
   background-clip: text;
-  color: transparent;
+  color: transparent
 }
-
 .members-main {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  color: var(--clr-text);
+  color: var(--clr-text)
 }
-
 .members-cards-container a {
   text-decoration: none;
-  color: var(--clr-text);
+  color: var(--clr-text)
 }
 .members-cards-row1 {
   display: flex;
   justify-content: space-evenly;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto
 }
-
 .members-img {
   height: 70%;
-  display:flex;
-  justify-content: center;
+  display: flex;
+  justify-content: center
 }
-
-.members-img img{
-  width:inherit;
-  height:100%;
+.members-img img {
+  width: inherit;
+  height: 100%
 }
-
 .members-cards {
   border-color: var(--clr-member-card-border);
   border-width: var(--member-card-border-px);
@@ -552,22 +460,19 @@ body {
   width: 300px;
   box-shadow: var(--clr-member-card-boxshadow);
   overflow: hidden;
-  transition: all 0.2s ease;
-  transition-timing-function: cubic-bezier(0.68, -0.5, 0.265, 2);
+  transition: all .2s ease;
+  transition-timing-function: cubic-bezier(0.68,-0.5,0.265,2)
 }
-
 .members-img-rep {
   height: auto;
   border-radius: 50px;
-  background-color: grey;
+  background-color: grey
 }
-
 .members-img-rep img {
   aspect-ratio: 1;
   border-radius: 50px;
-  object-fit: contain;
+  object-fit: contain
 }
-
 .members-cards-rep {
   display: flex;
   width: 325px;
@@ -575,146 +480,124 @@ body {
   border-style: solid;
   border-width: var(--member-card-border-px);
   box-shadow: var(--clr-member-card-boxshadow);
-  transition: 0.2s all ease;
-  background-color: var(--clr-member-card-bottom-bg);
+  transition: .2s all ease;
+  background-color: var(--clr-member-card-bottom-bg)
 }
-
 .members-cards-rep-outline {
   border-radius: 15px;
-  transition: 0.2s all ease;
+  transition: .2s all ease
 }
-
 .members-img-bottom {
   background-color: var(--clr-member-card-bottom-bg);
   width: 100%;
   height: 30%;
-  overflow: hidden;
+  overflow: hidden
 }
-
 .members-img-bottom h3 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 400
 }
 .members-img-bottom h4 {
-  font-weight: 600;
+  font-weight: 600
 }
-
 .members-cards-row2 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
-  width: 100%;
+  width: 100%
 }
-
 .members-cards-row3,
 .members-cards-row4 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 100%
 }
-
 .members-cards:hover {
-  transform: rotate(-2deg);
+  transform: rotate(-2deg)
 }
-
 .members-cards-rep-outline:hover {
   box-shadow: var(--members-rep-card-shadow-hover);
-  transform: scale(1.005);
+  transform: scale(1.005)
 }
-
 .members-cards:active {
   transform: rotate(-2deg);
-  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.4)
 }
 .members-cards-rep-outline:active {
-  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.4);
-  transform: scale(0.995);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.4);
+  transform: scale(.995)
 }
 .members-rep-img-bottom h3 {
   text-transform: uppercase;
-  margin-bottom: 0.3rem;
+  margin-bottom: .3rem;
   font-size: 1.1rem;
   letter-spacing: 1.8px;
-  font-weight: 400;
+  font-weight: 400
 }
-
 .members-rep-img-bottom h4 {
   text-transform: capitalize;
   font-size: 1.28rem;
-  font-weight: 600;
+  font-weight: 600
 }
-
 .seperator {
   width: 100%;
-  background: var(--clr-footer-border-top);
+  background: var(--clr-footer-border-top)
 }
-
 footer {
   background-image: var(--clr-footer);
   padding: 1.5rem 0;
-  text-align: center;
+  text-align: center
 }
-
 footer p {
-  color: var(--clr-text);
+  color: var(--clr-text)
 }
 .nav-menu {
   display: flex;
-  list-style: none;
+  list-style: none
 }
-
-#code{
-  color:var(--clr-text);
-  text-decoration: none;
+#code {
+  color: var(--clr-text);
+  text-decoration: none
 }
-
-@keyframes scroll-fade{
-  from{
-    opacity:0;
+@keyframes scroll-fade {
+  from {
+    opacity: 0
   }
-
-  to{
-    opacity:1;
-    transition:all 0.3s ease-in;
+  to {
+    opacity: 1;
+    transition: all .3s ease-in
   }
 }
-
-
 @media (width<=2560px) {
+  .goals-and-plans-container,
+  .hero-container,
+  .members-cards-container,
+  .members-header,
   .navbar,
   .origin-header,
-  .hero-container,
-  .goals-and-plans-container,
-  .text-wrapper,
-  .members-header,
-  .members-cards-container {
-    width: 1920px;
+  .text-wrapper {
+    width: 1920px
   }
-  p,
-  .navbar a {
-    font-size: 3rem;
+  .navbar a,
+  p {
+    font-size: 3rem
   }
-
   h1 {
-    font-size: 7rem;
+    font-size: 7rem
   }
-
   .navbutton svg {
     width: 60px;
     height: 60px;
-    color: var(--clr-text);
+    color: var(--clr-text)
   }
-
   .navbutton {
     padding: 1rem;
-    margin-left: 2rem;
+    margin-left: 2rem
   }
-
   .nav-menu {
-    gap: 3rem;
+    gap: 3rem
   }
-
   .blob-bg {
     background-image: var(--bg-image2560);
     background-size: 100% 100%;
@@ -722,105 +605,84 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 20rem;
-    padding-bottom:10rem;
+    padding-bottom: 10rem;
     background-color: var(--clr-bg);
-    border-top: 3px solid #1a1a1a;
+    border-top: 3px solid #1a1a1a
   }
   .navbar {
-    padding: 6rem 3rem;
+    padding: 6rem 3rem
   }
-
   .logo svg {
-    transform: scale(3);
+    transform: scale(3)
   }
-
   .hero-button-row {
     gap: 3.5rem;
     margin-top: 4.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem
   }
-
   .hero-button-row a {
     font-size: 3rem;
     padding: 2rem 5rem;
-    border-radius: 40px;
+    border-radius: 40px
   }
-
   .origin {
-    padding-top: 15rem;
+    padding-top: 15rem
   }
-
   .img-wrapper {
-    padding: 2rem 0;
+    padding: 2rem 0
   }
-
-  
-
   .slick-dots li {
-    width: 50px;
+    width: 50px
   }
   .slick-dots li button:before {
-    font-family: "slick";
+    font-family: slick;
     font-size: 15px;
     line-height: 20px;
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 20px;
     height: 20px;
-
     content: "•";
     text-align: center;
-
-    opacity: 0.25;
+    opacity: .25;
     color: var(--clr-text);
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin-top: 2rem;
+    margin-top: 2rem
   }
-  .goals-and-plans{
-    padding:7rem 0 9rem;
+  .goals-and-plans {
+    padding: 7rem 0 9rem
   }
   .goals-and-plans-categories {
-    gap: 3.5rem;
+    gap: 3.5rem
   }
   .collapsible label {
     font-size: 2.5rem;
     padding: 2.5rem;
     border-radius: 30px;
-    border: calc(var(--member-card-border-px) + 2px) solid transparent;
-
-
+    border: calc(var(--member-card-border-px) + 2px) solid transparent
   }
-
   .collapsible-text {
-    font-size: 2.5rem;
+    font-size: 2.5rem
   }
-
   .collapsible-label svg {
     width: 50px;
-    height: 50px;
+    height: 50px
   }
-
-  .collapsible input[type="checkbox"]:checked ~ .collapsible-text {
+  .collapsible input[type=checkbox]:checked ~ .collapsible-text {
     border-radius: 0 0 30px 30px;
-    padding: 30px;
+    padding: 30px
   }
-
-  .collapsible input[type="checkbox"]:checked + .collapsible-label {
-    border-radius: 30px 30px 0 0;
+  .collapsible input[type=checkbox]:checked + .collapsible-label {
+    border-radius: 30px 30px 0 0
   }
-
-  .members-header{
-    margin-top:7rem;
+  .members-header {
+    margin-top: 7rem
   }
   .members-cards-container {
-    padding: 7rem 0;
+    padding: 7rem 0
   }
-
   .members-cards-container {
     margin-top: 6rem;
     display: flex;
@@ -829,174 +691,146 @@ footer p {
     background-image: var(--members-bg);
     background-size: 90% 90%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center
   }
-
   .members-cards,
   .members-cards-rep {
-    width: 500px;
+    width: 500px
   }
-
   .members-cards {
     height: 500px;
-    border-radius: 30px;
+    border-radius: 30px
   }
   .members-img-bottom h3,
   .members-rep-img-bottom h3 {
     font-size: 1.8rem;
-    letter-spacing: 3px;
+    letter-spacing: 3px
   }
-
   .members-img-bottom h4,
   .members-rep-img-bottom h4 {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 2rem
   }
-
   .members-img-bottom {
-    padding: 30px;
+    padding: 30px
   }
   .members-cards-row2 {
-    margin-top: 3rem;
+    margin-top: 3rem
   }
   .members-cards-rep {
     border-radius: 25px;
     gap: 1rem;
-    padding: 40px 30px;
+    padding: 40px 30px
   }
   .members-img-rep,
   .members-img-rep img {
     width: 80px;
-    height: 80px;
+    height: 80px
   }
-  .seperator{
-    height:calc(var(--member-card-border-px) + 4px);
+  .seperator {
+    height: calc(var(--member-card-border-px) + 4px)
   }
   footer p {
-    font-size: 2.2rem;
+    font-size: 2.2rem
   }
-
   footer {
-    padding: 2.5rem 0;
+    padding: 2.5rem 0
   }
-
 }
-
 @media (width<= 1920px) {
+  .goals-and-plans-container,
+  .hero-container,
+  .members-cards-container,
+  .members-header,
   .navbar,
   .origin-header,
-  .hero-container,
-  .goals-and-plans-container,
-  .text-wrapper,
-  .members-header,
-  .members-cards-container {
-    width: 1536px;
+  .text-wrapper {
+    width: 1536px
   }
-
-  p,
-  .navbar a {
-    font-size: 2.5rem;
+  .navbar a,
+  p {
+    font-size: 2.5rem
   }
-
   h1 {
-    font-size: 6rem;
+    font-size: 6rem
   }
-
   .hero-button-row a {
     font-size: 2.5rem;
-    padding: 1.5rem 4.5rem;
+    padding: 1.5rem 4.5rem
   }
   .goals-and-plans-categories {
-    gap: 2.2em;
+    gap: 2.2em
   }
   .collapsible label {
     font-size: 2rem;
-    padding: 2rem;
+    padding: 2rem
   }
-
   .collapsible-text {
-    font-size: 2rem;
+    font-size: 2rem
   }
-
   .collapsible-label svg {
     width: 50px;
-    height: 50px;
+    height: 50px
   }
-
   .members-cards,
   .members-cards-rep {
-    width: 450px;
+    width: 450px
   }
-
   .members-cards {
-    height: 400px;
+    height: 400px
   }
-
   .members-img-bottom h3,
   .members-rep-img-bottom h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem
   }
-
   .members-img-bottom h4,
   .members-rep-img-bottom h4 {
     font-size: 1.7rem;
-    margin-top: 0.5rem;
+    margin-top: .5rem
   }
 }
-
-/* laptop */
-
 @media (width<=1536px) {
-  p,
-  .navbar a {
-    font-size: 1.75rem;
+  .navbar a,
+  p {
+    font-size: 1.75rem
   }
-
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.5rem
   }
-
   footer p {
-    font-size: 1.4rem;
+    font-size: 1.4rem
   }
-
   .navbar {
-    padding: 1.75rem 1rem;
+    padding: 1.75rem 1rem
   }
-
   .nav-menu {
-    gap: 1.5rem;
+    gap: 1.5rem
   }
-
   .logo svg {
-    transform: scale(1.5);
+    transform: scale(1.5)
   }
   .hero-text p {
-    width: 40ch;
+    width: 40ch
   }
-
   .navbutton svg {
     width: 30px;
     height: 30px;
-    color: var(--clr-text);
+    color: var(--clr-text)
   }
-
   .navbutton {
-    padding: 0.5rem;
-    margin-left: 1.5rem;
+    padding: .5rem;
+    margin-left: 1.5rem
   }
-
   .hero-button-row {
     gap: 1.5rem;
     margin-top: 2.25rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem
   }
   .hero-button-row a {
     font-size: 1.5rem;
     padding: 1rem 2.5rem;
-    border-radius: 20px;
+    border-radius: 20px
   }
-
   .blob-bg {
     background-image: var(--bg-image1536);
     background-size: 100% 100%;
@@ -1004,164 +838,140 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 6rem;
-    padding-bottom:4rem;
+    padding-bottom: 4rem;
     background-color: var(--clr-bg);
-    border-top: 1px solid #1a1a1a;
+    border-top: 1px solid #1a1a1a
   }
-
   .origin {
-    padding-top: 3rem;
+    padding-top: 3rem
   }
   .img-wrapper {
-    padding: 2rem 0;
+    padding: 2rem 0
   }
-
   .slick-dots li button:before {
-    font-size: 6px;
+    font-size: 6px
   }
-
   .slick-dots li {
-    width: initial;
+    width: initial
   }
-
   .goals-and-plans {
     display: flex;
-    justify-content: center;
+    justify-content: center
   }
-
   .goals-and-plans-main {
-    text-align: left;
+    text-align: left
   }
-
+  .goals-and-plans-container,
+  .hero-container,
+  .members-cards-container,
+  .members-header,
   .navbar,
   .origin-header,
-  .hero-container,
-  .goals-and-plans-container,
-  .text-wrapper,
-  .members-header,
-  .members-cards-container {
-    width: 1280px;
+  .text-wrapper {
+    width: 1280px
   }
-
   .members-cards-container {
-    padding: 4.5rem 0;
+    padding: 4.5rem 0
   }
-
   .goals-and-plans-container {
     width: 1280px;
     display: flex;
-    padding-bottom:3rem;
+    padding-bottom: 3rem
   }
-
   .goals-and-plans-categories {
-    gap: 1.5rem;
+    gap: 1.5rem
   }
   .goals-and-plans-title {
-    font-size: 3.5rem;
+    font-size: 3.5rem
   }
-
-  .goals-and-plans{
-    padding: 0;
+  .goals-and-plans {
+    padding: 0
   }
-
   .collapsible label {
     font-size: 1.4rem;
     padding: 1em;
     border-radius: 15px;
-    border: var(--member-card-border-px) solid transparent;
+    border: var(--member-card-border-px) solid transparent
   }
-
   .collapsible-text {
-    font-size: 1.4rem;
+    font-size: 1.4rem
   }
-
-
   .collapsible-label svg {
     width: 30px;
-    height:30px;
-    right:2rem;
-  top:1.5rem;
+    height: 30px;
+    right: 2rem;
+    top: 1.5rem
   }
-
-  .collapsible input[type="checkbox"]:checked ~ .collapsible-text {
+  .collapsible input[type=checkbox]:checked ~ .collapsible-text {
     border-radius: 0 0 15px 15px;
-    padding: 15px;
+    padding: 15px
   }
-
-  .collapsible input[type="checkbox"]:checked + .collapsible-label {
-    border-radius: 15px 15px 0 0;
+  .collapsible input[type=checkbox]:checked + .collapsible-label {
+    border-radius: 15px 15px 0 0
   }
-  .members-header{
-    margin-top:2rem;
+  .members-header {
+    margin-top: 2rem
   }
   .members-cards-container {
-    padding: 1.5rem 0 4rem;
+    padding: 1.5rem 0 4rem
   }
   .members-cards,
   .members-cards-rep {
-    width: 300px;
+    width: 300px
   }
-
   .members-cards {
     height: 300px;
-    border-radius: 20px;
+    border-radius: 20px
   }
   .members-container h4 {
-    font-weight: 600;
+    font-weight: 600
   }
-
   .members-cards-container {
     margin-top: 3rem;
-    gap: 2rem;
+    gap: 2rem
   }
-
   .members-img-bottom {
-    padding: 15px;
+    padding: 15px
   }
-
   .members-img-bottom h3,
   .members-rep-img-bottom h3 {
     font-size: 1.1rem;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.8px
   }
-
   .members-img-bottom h4,
   .members-rep-img-bottom h4 {
-    margin-top: 0.5rem;
-    font-size: 1.27rem;
+    margin-top: .5rem;
+    font-size: 1.27rem
   }
-
   .members-cards-row2 {
-    margin-top: 1rem;
+    margin-top: 1rem
   }
-
   .members-cards-rep {
     border-radius: 15px;
-    gap: 0.5rem;
-    padding: 25px 15px;
+    gap: .5rem;
+    padding: 25px 15px
   }
-
   .members-img-rep,
   .members-img-rep img {
     width: 50px;
-    height: 50px;
+    height: 50px
   }
-  .seperator{
-    height:var(--member-card-border-px);
+  .seperator {
+    height: var(--member-card-border-px)
   }
   footer {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0
   }
 }
 @media (width<=1280px) {
-  .navbar,
-  .hero-container,
-  .origin-header,
   .goals-and-plans-container,
-  .text-wrapper,
+  .hero-container,
+  .members-cards-container,
   .members-header,
-  .members-cards-container {
-    width: 1024px;
+  .navbar,
+  .origin-header,
+  .text-wrapper {
+    width: 1024px
   }
   .blob-bg {
     background-image: var(--bg-image1280);
@@ -1169,53 +979,46 @@ footer p {
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-bg)
   }
-
   .goals-and-plans-container {
     max-width: 1024px;
-    justify-content: space-evenly;
+    justify-content: space-evenly
   }
   .collapsible-label div {
-    margin-left: 2em;
+    margin-left: 2em
   }
-
   .collapsible label {
-    font-size: 1.3rem;
+    font-size: 1.3rem
   }
   .collapsible-text {
-    font-size: 1.3rem;
+    font-size: 1.3rem
   }
 }
-
-@media (max-width: 1024px) {
-  p,
-  .navbar a {
-    font-size: 1.5rem;
+@media (max-width:1024px) {
+  .navbar a,
+  p {
+    font-size: 1.5rem
   }
-
   h1 {
-    font-size: 3rem;
+    font-size: 3rem
   }
-  .navbar,
-  .hero-container,
-  .origin-header,
   .goals-and-plans-container,
-  .text-wrapper,
+  .hero-container,
   .members-cards-container,
-  .members-header {
-    max-width: 768px;
+  .members-header,
+  .navbar,
+  .origin-header,
+  .text-wrapper {
+    max-width: 768px
   }
-
-  .hero-title{
-    width:70%;
-    margin:0 auto;
+  .hero-title {
+    width: 70%;
+    margin: 0 auto
   }
-
-  .members-main{
-    width:70%;
+  .members-main {
+    width: 70%
   }
-
   .blob-bg {
     background-image: var(--bg-image1024);
     background-size: 100% 100%;
@@ -1223,105 +1026,82 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 10rem;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-bg)
   }
   .goals-and-plans-title {
-    font-size: 3rem;
+    font-size: 3rem
   }
-
-  .goals-and-plans-container{
-    gap:1.5rem;
+  .goals-and-plans-container {
+    gap: 1.5rem
   }
-
-  .goals-and-plans-categories{
-    gap:1rem;
+  .goals-and-plans-categories {
+    gap: 1rem
   }
-
   .collapsible label {
-    font-size: 1rem;
+    font-size: 1rem
   }
-
-
-
-  .collapsible-label svg{
+  .collapsible-label svg {
     width: 20px;
-    height:20px;
-    top:1.1rem;
-    right:0.7rem;
+    height: 20px;
+    top: 1.1rem;
+    right: .7rem
   }
-
   .collapsible-text {
-    font-size: 1rem;
+    font-size: 1rem
   }
-
-
   .goals-and-plans-text {
-    max-height: 0.1px;
+    max-height: .1px
   }
-  .members{
-    padding-top:4rem;
+  .members {
+    padding-top: 4rem
   }
   .members-cards,
   .members-cards-rep {
-    width: 230px;
+    width: 230px
   }
-
   .members-cards {
-    height: 250px;
+    height: 250px
   }
-
   .members-cards h4 {
-    font-size: 0.9rem;
+    font-size: .9rem
   }
   .members-cards h3 {
-    font-size: 0.875rem;
+    font-size: .875rem
   }
-
   .members-rep-img-bottom h3 {
-    font-size: 0.75rem;
+    font-size: .75rem
   }
-
   .members-rep-img-bottom h4 {
-    margin-top: 0.3rem;
-    font-size: 0.95rem;
+    margin-top: .3rem;
+    font-size: .95rem
   }
-
   .members-cards-rep {
-    padding: 15px 10px;
+    padding: 15px 10px
   }
-
   .members-img-rep {
     width: 35px;
-    height: 35px;
+    height: 35px
   }
-
   .members-img-rep img {
     width: 35px;
     height: 35px;
     border-radius: 50px;
-    object-fit: contain;
+    object-fit: contain
   }
 }
-
-/* enter tablet */
 @media (width<=768px) {
-  .navbar,
   .goals-and-plans-container,
-  .text-wrapper,
-  .members-header,
-  .members-cards-container,
   .hero-container,
-  .origin-header {
-    max-width: 640px;
-
+  .members-cards-container,
+  .members-header,
+  .navbar,
+  .origin-header,
+  .text-wrapper {
+    max-width: 640px
   }
-
-  .hero-text{
-    width:80%;
+  .hero-text {
+    width: 80%
   }
-
-
-
   .blob-bg {
     background-image: var(--bg-image768);
     background-size: 100% 100%;
@@ -1329,41 +1109,33 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 7rem;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-bg)
   }
-
-  .section{
-    margin-top:2.5rem;
+  .section {
+    margin-top: 2.5rem
   }
-
-  .goals-and-plans-categories{
-    padding:0;
+  .goals-and-plans-categories {
+    padding: 0
   }
-
   .goals-and-plans-title {
-    font-size: 2.5rem;
+    font-size: 2.5rem
   }
   .collapsible label {
     font-size: 1rem;
-    padding:1rem 0.5rem;
+    padding: 1rem .5rem
   }
   .collapsible-text {
-    font-size: 1rem;
+    font-size: 1rem
   }
-
   .collapsible-label svg {
-    right:0.45rem;
+    right: .45rem
   }
-
-
-
   .members-cards,
   .members-cards-rep {
-    height: fit-content;
+    height: fit-content
   }
-
   .members-cards-rep {
-    width: 195px;
+    width: 195px
   }
   .members-cards-row1,
   .members-cards-row2,
@@ -1371,71 +1143,62 @@ footer p {
   .members-cards-row4 {
     justify-content: center;
     gap: 1.5rem;
-    padding: 0;
+    padding: 0
   }
-
   .members-cards {
-    height: 250px;
+    height: 250px
   }
-
   .members-cards-rep {
-    padding: 15px 15px;
+    padding: 15px 15px
   }
   .members-cards h4 {
-    font-size: 0.86rem;
+    font-size: .86rem;
     font-weight: 500;
-    margin-top: 0.3rem;
+    margin-top: .3rem
   }
   .members-cards h3 {
-    font-size: 0.8rem;
+    font-size: .8rem
   }
   .members-img-rep {
     width: 30px;
-    height: 30px;
+    height: 30px
   }
   .members-img-rep img {
     width: 30px;
-    height: 30px;
+    height: 30px
   }
   .members-rep-img-bottom h3 {
-    font-size: 0.55rem;
+    font-size: .55rem
   }
-
   .members-rep-img-bottom h4 {
-    font-size: 0.75rem;
+    font-size: .75rem
   }
-
-  .members-header{
-    margin-top:2rem;
+  .members-header {
+    margin-top: 2rem
   }
-
-  .members-main{
-    width:85%;
+  .members-main {
+    width: 85%
   }
-
 }
-
 @media (width<=640px) {
   p {
-    font-size: 1.2rem;
+    font-size: 1.2rem
   }
-
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.6rem
   }
   .goals-and-plans-container,
-  .text-wrapper,
-  .members-cards-container,
-  .members-header,
   .hero-container,
   .hero-content,
-  .origin-header {
+  .members-cards-container,
+  .members-header,
+  .origin-header,
+  .text-wrapper {
     max-width: 475px;
-    flex-direction: column;
+    flex-direction: column
   }
-
   .navbar {
-    max-width: 475px;
+    max-width: 475px
   }
   .blob-bg {
     background-image: var(--bg-image640);
@@ -1444,129 +1207,110 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 10rem;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-bg)
   }
   .nav-menu {
-    display: none;
+    display: none
   }
-
-  .hero-title,.members-main{
-    width:100%;
-
+  .hero-title,
+  .members-main {
+    width: 100%
   }
   .hero-button-row {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
   }
   .hero-button-row a {
     font-size: 1.3rem;
     width: 200px;
-    padding: 0.75rem 1.75rem;
+    padding: .75rem 1.75rem
   }
-
   .img-wrapper {
-    width: 100%;
+    width: 100%
   }
-
   .collapsible-label {
-    padding: 0.5rem;
+    padding: .5rem
   }
-
   .goals-and-plans-container {
-    gap: 0;
+    gap: 0
   }
-  .goals-and-plans-content{
-    width:100%;
+  .goals-and-plans-content {
+    width: 100%
   }
   .goals-and-plans-main {
     width: 100%;
     text-align: center;
-    border:2px solid red;
+    border: 2px solid red
   }
-
-
-
   .goals-and-plans-content {
-    text-align: center;
+    text-align: center
   }
-
   .goals-and-plans-categories {
     margin-top: 2.5rem;
-    width:100%;
+    width: 100%
   }
-
-  .collapsible label svg{
-    right:1rem;
+  .collapsible label svg {
+    right: 1rem
   }
-
   .section {
-    margin-top: 0;
+    margin-top: 0
   }
-
   .card-img-container {
-    border-radius: 0px;
-    border:none;
+    border-radius: 0;
+    border: none
   }
-
   .collapsible label {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
   }
-
   .collapsible-text {
-    text-align: left;
+    text-align: left
   }
-
   .members-cards-row1,
   .members-cards-row2,
   .members-cards-row3,
   .members-cards-row4 {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center
   }
-
   .members-cards-row1,
   .members-cards-row2 {
-    gap: 2.2rem;
+    gap: 2.2rem
   }
   .members-cards-row2 {
-    margin-top: 0;
+    margin-top: 0
   }
   .members-cards-row3,
   .members-cards-row4 {
-    gap: 1.3rem;
+    gap: 1.3rem
   }
-
   .members-cards-row4 {
-    margin-top: -1.2rem;
+    margin-top: -1.2rem
   }
   .members-container h3 {
-    font-size: 0.72rem;
+    font-size: .72rem
   }
-
   .members-container h4 {
-    font-size: 0.9rem;
+    font-size: .9rem
   }
-
   .navbutton svg {
     width: 30px;
-    height: 30px;
+    height: 30px
   }
   .members-cards-rep {
-    width: 230px;
+    width: 230px
   }
   .members-img-rep {
     height: 35px;
-    width: 35px;
+    width: 35px
   }
-
   .members-img-rep img {
     width: 35px;
     height: 35px;
     border-radius: 50px;
-    object-fit: contain;
+    object-fit: contain
   }
   .members-cards-container {
     margin-top: 3rem;
@@ -1577,21 +1321,19 @@ footer p {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: fixed
   }
 }
-
 @media (width<=475px) {
-  .navbar,
   .goals-and-plans-container,
-  .text-wrapper,
+  .hero-container,
   .members-cards-container,
   .members-header,
-  .hero-container,
-  .origin-header {
-    width: 375px;
+  .navbar,
+  .origin-header,
+  .text-wrapper {
+    width: 375px
   }
-
   .blob-bg {
     background-image: var(--bg-image475);
     background-size: 100% 100%;
@@ -1599,96 +1341,83 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 4rem;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-bg)
   }
   .goals-and-plans-container {
-    text-align: center;
+    text-align: center
   }
-
-  .goals-and-plans-content{
+  .goals-and-plans-content {
     width: auto;
-    text-align: center;
+    text-align: center
   }
   .members-img-rep {
     width: 40px;
-    height: 40px;
+    height: 40px
   }
-
   .members-img-rep img {
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    object-fit: contain;
+    object-fit: contain
   }
-
   .members-cards,
   .members-cards-rep {
-    width: 250px;
+    width: 250px
   }
   footer p {
-    font-size: 1rem;
+    font-size: 1rem
   }
-
-  .hero-text, .origin-text {
-    width: 100%;
+  .hero-text,
+  .origin-text {
+    width: 100%
   }
-
   footer {
-    line-height: 1.5rem;
+    line-height: 1.5rem
   }
 }
-
 @media (width<=375px) {
-  h1{
-    font-size:2.1rem;
+  h1 {
+    font-size: 2.1rem
   }
-
   p {
-    font-size: 1.1rem;
+    font-size: 1.1rem
   }
-  .navbar,
   .goals-and-plans-container,
-  .text-wrapper,
+  .hero-container,
   .members-cards-container,
   .members-header,
-  .hero-container,
-  .origin-header {
-    width: 325px;
+  .navbar,
+  .origin-header,
+  .text-wrapper {
+    width: 325px
   }
-
-
-  .goals-and-plans-categories{
-    padding:0rem;
+  .goals-and-plans-categories {
+    padding: 0
   }
-
   .collapsible-label svg {
-    top:1.05rem;
-    right:0.2rem;
+    top: 1.05rem;
+    right: .2rem
   }
   .collapsible label {
-    padding: 1rem 0.75rem;
+    padding: 1rem .75rem
   }
 }
-
 @media (width<=325px) {
-  .navbar,
   .goals-and-plans-container,
-  .text-wrapper,
+  .hero-container,
   .members-cards-container,
   .members-header,
-  .hero-container,
-  .origin-header {
-    width: 100%;
+  .navbar,
+  .origin-header,
+  .text-wrapper {
+    width: 100%
   }
-
   .collapsible-label svg {
     width: 22px;
     height: 22px;
-    right:-0.3rem;
+    right: -.3rem
   }
-
-  .collapsible label{
-    padding:1rem 0.3rem;
-
+  .collapsible label {
+    padding: 1rem .3rem
   }
 }
