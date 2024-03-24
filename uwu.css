@@ -117,7 +117,7 @@ body {
   scroll-behavior: smooth !important;
 }
 
-.navbar,
+
 .hero-container,
 .origin-header,
 .goals-and-plans-container,
@@ -138,7 +138,7 @@ body {
   z-index: 100;
 }
 
-.logo {
+.logo svg {
   opacity: 1;
   display: flex;
   justify-content: center;
@@ -149,6 +149,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width:100%;
+  padding-left:5rem;
+  padding-right:5rem;
 }
 
 .navlinks {
@@ -682,7 +685,7 @@ footer p {
 
 
 @media (width<=2560px) {
-  .navbar,
+
   .origin-header,
   .hero-container,
   .goals-and-plans-container,
@@ -715,6 +718,7 @@ footer p {
     gap: 3rem;
   }
 
+
   .blob-bg {
     background-image: var(--bg-image2560);
     background-size: 100% 100%;
@@ -727,12 +731,12 @@ footer p {
     border-top: 3px solid #1a1a1a;
   }
   .navbar {
-    padding: 6rem 3rem;
+    padding: 1rem 5rem;
   }
-
-  .logo svg {
-    transform: scale(3);
-  }
+.logo svg{
+  width:250px;
+  height:250px;
+}
 
   .hero-button-row {
     gap: 3.5rem;
@@ -883,7 +887,6 @@ footer p {
 }
 
 @media (width<= 1920px) {
-  .navbar,
   .origin-header,
   .hero-container,
   .goals-and-plans-container,
@@ -961,7 +964,7 @@ footer p {
   }
 
   .navbar {
-    padding: 1.3rem 1rem 0.5rem;
+    padding: 0.5rem 2.5rem ;
   }
 
   .nav-menu {
@@ -969,15 +972,16 @@ footer p {
   }
 
   .logo svg {
-    transform: scale(1.3);
+    width:150px;
+    height:150px;
   }
   .hero-text p {
     width: 40ch;
   }
 
   .navbutton svg {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     color: var(--clr-text);
   }
 
@@ -1033,7 +1037,6 @@ footer p {
     text-align: left;
   }
 
-  .navbar,
   .origin-header,
   .hero-container,
   .goals-and-plans-container,
@@ -1215,6 +1218,16 @@ footer p {
     padding-left:1.5rem;
     padding-right:1.5rem;
   }
+
+  .logo svg{
+    width:100px;
+    height:100px;
+  }
+
+  .navbutton svg{
+    width:30px;
+    height:30px;
+  }
   .hero-title{
     width:70%;
     margin:0 auto;
@@ -1337,10 +1350,7 @@ footer p {
   padding-right: 1rem;
 }
 
-.logo svg{
-  width:70px;
-  height:70px;
-}
+
 
   .blob-bg {
     background-image: var(--bg-image768);
