@@ -782,7 +782,7 @@ footer p {
 
 #code{
   color:var(--clr-text);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 @keyframes scroll-fade{
