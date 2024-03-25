@@ -1282,6 +1282,8 @@ footer p {
 
   .goals-and-plans-container {
     max-width: 1024px;
+    padding-left:0;
+    padding-right:0;
     justify-content: space-evenly;
   }
   .collapsible-label div {
