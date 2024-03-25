@@ -117,6 +117,17 @@ body {
   scroll-behavior: smooth !important;
 }
 
+ p,
+  .navbar a {
+    font-size: 3.5rem;
+  }
+
+   h1 {
+    font-size: 8rem;
+  }
+
+
+
 
 .hero-container,
 .origin-header,
@@ -143,6 +154,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+width:350px;
+height:350px;
 }
 
 .navbar {
@@ -172,12 +185,27 @@ body {
 
 .navbutton {
   background-color: transparent;
-  border: 1px solid var(--clr-text);
+  border: 3px solid var(--clr-text);
   border-radius: 180px;
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbutton svg {
+  width: 70px;
+  height: 70px;
+  color: var(--clr-text);
+}
+
+.navbutton {
+  padding: 1rem;
+  margin-left: 3rem;
+}
+
+.nav-menu {
+  gap: 3rem;
 }
 
 .sun {
@@ -208,7 +236,7 @@ body {
 }
 
 .hero-title, .members-main{
-  width:60%;
+  width:70%;
 }
 
 
@@ -220,7 +248,7 @@ body {
 }
 
 .hero-text {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: var(--clr-text);
 }
 
@@ -228,6 +256,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: bottom;
+  gap: 4rem;
+  margin-top: 4.5rem;
+  margin-bottom: 5rem;
 }
 
 .hero-button-row a {
@@ -236,6 +267,9 @@ body {
   border: none;
   transition: all 0.2s ease;
   text-decoration: none;
+  font-size: 3rem;
+    padding: 2rem 5rem;
+    border-radius: 40px;
 }
 
 .hero-button1 {
@@ -263,6 +297,22 @@ body {
 .hero-button2:active {
   box-shadow: none;
   background-color: #8436c9;
+}
+
+
+.blob-bg {
+  background-image: var(--bg-image2560);
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding-top: 20rem;
+  padding-bottom:10rem;
+  background-color: var(--clr-bg);
+  border-top: 3px solid #1a1a1a;
+}
+.origin{
+  padding-top:15rem;
 }
 
 .origin-header {
@@ -302,6 +352,7 @@ body {
 }
 
 .img-wrapper {
+  padding:3rem 0;
   width: 180%;
   display: flex;
   flex-direction: row;
@@ -311,7 +362,7 @@ body {
   width: 100%;
   height: auto;
   background-color: transparent;
-  border-radius: 1.25rem;
+  border-radius: 2rem;
   border: 1px solid #050c10;
   margin: 0 20px;
   transform: scale(0.8, 0.8);
@@ -349,6 +400,33 @@ body {
   max-width: 30ch;
 }
 
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: "•";
+  text-align: center;
+
+  opacity: 0.25;
+  color: var(--clr-text);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 2rem;
+}
+
+.slick-dots li {
+  width: 50px;
+}
+
 .slick-slide {
   opacity: 0.5;
   margin: 0 1rem;
@@ -373,7 +451,7 @@ body {
   visibility: hidden;
 }
 .goals-and-plans {
-  padding-bottom: 3rem;
+  padding:7rem 0 9rem;
   background-color: var(--clr-bgdropdown);
   width: 100vw;
   display: flex;
@@ -381,8 +459,8 @@ body {
 
 .goals-and-plans-container {
   margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
+padding-left:6rem;
+padding-right:6rem;
   display: flex;
   justify-content: space-around;
 }
@@ -413,7 +491,7 @@ body {
   display: flex;
   flex-direction: column;
   width:50%;
-
+  gap:3.5rem;
   padding:1rem;
 }
 
@@ -439,21 +517,26 @@ body {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
   white-space: nowrap;
   position:relative;
+  font-size: 2.5rem;
+  padding: 2.5rem;
+  border-radius: 30px;
+  border: calc(var(--member-card-border-px) + 2px) solid transparent;
 }
 
 .collapsible-label svg {
   border-radius: 180px;
   position:absolute;
-  right:2rem;
+  right:3rem;
   top:2.5rem;
   color: var(--clr-text);
   transition: all 0.3s ease-out;
+  width:50px;
+  height:50px;
 }
 
 .collapsible-text {
   max-height: 1px;
   overflow: hidden;
-
   position: relative;
   opacity: 0;
   width: auto;
@@ -465,6 +548,9 @@ body {
   border-top: none;
   flex: 1;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  font-size: 2.5rem;
+    border-radius: 30px;
+    border: calc(var(--member-card-border-px) + 2px) solid transparent;
 }
 
 .collapsible input[type="checkbox"]:checked ~ .collapsible-text {
@@ -472,10 +558,14 @@ body {
   opacity: 1;
   top: 0;
   left: 0;
+  border-radius: 0 0 30px 30px;
+  padding: 35px;
+border-top:none;
 }
 
 .collapsible input[type="checkbox"]:checked + .collapsible-label {
   box-shadow: none;
+  border-radius: 30px 30px 0 0;
 }
 
 .collapsible input[type="checkbox"]:checked + .collapsible-label svg {
@@ -483,7 +573,7 @@ body {
 }
 
 .collapsible-text ul {
-  padding: 0 2em;
+  padding: 0 1.5em;
 }
 
 .collapsible input {
@@ -503,6 +593,7 @@ body {
   justify-content: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top:7rem;
 }
 
 .members-header h1 {
@@ -523,6 +614,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   color: var(--clr-text);
+}
+
+.members-cards-container {
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-image: var(--members-bg);
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .members-cards-container a {
@@ -551,35 +653,48 @@ body {
   border-color: var(--clr-member-card-border);
   border-width: var(--member-card-border-px);
   border-style: solid;
-  height: 300px;
-  width: 300px;
+  height: 600px;
+  width: 600px;
   box-shadow: var(--clr-member-card-boxshadow);
   overflow: hidden;
   transition: all 0.2s ease;
   transition-timing-function: cubic-bezier(0.68, -0.5, 0.265, 2);
+  border-radius: 30px;
 }
 
 .members-img-rep {
   height: auto;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: grey;
 }
 
 .members-img-rep img {
   aspect-ratio: 1;
-  border-radius: 50px;
+  border-radius: 50%;
   object-fit: contain;
 }
 
+
+
+.members-img-rep,
+  .members-img-rep img {
+    width: 120px;
+    height: 120px;
+  }
+
 .members-cards-rep {
   display: flex;
-  width: 325px;
+align-items: center;
+  width: 600px;
   border-color: var(--clr-member-card-border);
   border-style: solid;
   border-width: var(--member-card-border-px);
   box-shadow: var(--clr-member-card-boxshadow);
   transition: 0.2s all ease;
   background-color: var(--clr-member-card-bottom-bg);
+  border-radius: 25px;
+  gap: 1.5rem;
+  padding: 40px 30px;
 }
 
 .members-cards-rep-outline {
@@ -592,14 +707,20 @@ body {
   width: 100%;
   height: 30%;
   overflow: hidden;
+  padding:2.5rem;
 }
 
-.members-img-bottom h3 {
+.members-img-bottom h3,  .members-rep-img-bottom h3 {
   text-transform: uppercase;
   font-weight: 400;
+  font-size:2.1rem;
+  letter-spacing:3px;
 }
-.members-img-bottom h4 {
+.members-img-bottom h4, .members-rep-img-bottom h4 {
   font-weight: 600;
+  font-size:2.3rem;
+  margin-top:0.7rem;
+  text-transform: capitalize;
 }
 
 .members-cards-row2 {
@@ -634,33 +755,25 @@ body {
   box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.4);
   transform: scale(0.995);
 }
-.members-rep-img-bottom h3 {
-  text-transform: uppercase;
-  margin-bottom: 0.3rem;
-  font-size: 1.1rem;
-  letter-spacing: 1.8px;
-  font-weight: 400;
-}
 
-.members-rep-img-bottom h4 {
-  text-transform: capitalize;
-  font-size: 1.28rem;
-  font-weight: 600;
-}
+
 
 .seperator {
   width: 100%;
   background: var(--clr-footer-border-top);
+  height:calc(var(--member-card-border-px) + 4px);
 }
 
 footer {
   background-image: var(--clr-footer);
   padding: 1.5rem 0;
   text-align: center;
+  padding:3rem 0;
 }
 
 footer p {
   color: var(--clr-text);
+  font-size:2.5rem
 }
 .nav-menu {
   display: flex;
@@ -712,6 +825,7 @@ footer p {
   .navbutton {
     padding: 1rem;
     margin-left: 2rem;
+    border: 1px solid var(--clr-text);
   }
 
   .nav-menu {
@@ -719,17 +833,6 @@ footer p {
   }
 
 
-  .blob-bg {
-    background-image: var(--bg-image2560);
-    background-size: 100% 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    padding-top: 20rem;
-    padding-bottom:10rem;
-    background-color: var(--clr-bg);
-    border-top: 3px solid #1a1a1a;
-  }
   .navbar {
     padding: 1rem 5rem;
   }
@@ -783,7 +886,7 @@ footer p {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin-top: 2rem;
+
   }
   .goals-and-plans{
     padding:7rem 0 9rem;
@@ -796,8 +899,6 @@ footer p {
     padding: 2.5rem;
     border-radius: 30px;
     border: calc(var(--member-card-border-px) + 2px) solid transparent;
-
-
   }
 
   .collapsible-text {
