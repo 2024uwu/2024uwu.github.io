@@ -1611,17 +1611,13 @@ footer p {
   }
   .goals-and-plans-content{
     width:100%;
+    text-align: center;
   }
   .goals-and-plans-main {
     width: 100%;
     text-align: center;
   }
 
-
-
-  .goals-and-plans-content {
-    text-align: center;
-  }
 
   .goals-and-plans-categories {
     margin-top: 2.5rem;
@@ -1736,10 +1732,6 @@ footer p {
     text-align: center;
   }
 
-  .goals-and-plans-content{
-    width: auto;
-    text-align: center;
-  }
   .members-img-rep {
     width: 40px;
     height: 40px;
