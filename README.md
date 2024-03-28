@@ -1,2 +1,2 @@
-# Bob's Hidden History
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur aliquam deleniti libero odio adipisci consectetur cumque esse fuga, autem praesentium animi harum, nisi quibusdam sint, ipsa aspernatur labore officiis ut!
+# License
+All rights to the content of this project itself, including but not limited to text, style, and assets (logos, pictures, and other media) are reserved, and the underlying source code used to format and display that content is licensed under the MIT license.
