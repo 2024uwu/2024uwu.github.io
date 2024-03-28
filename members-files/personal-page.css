@@ -208,7 +208,7 @@ h4 {
   margin-top: 7rem;
 }
 
-.list {
+.list, .list1 {
   color: var(--clr-text);
   margin-top: 1rem;
   margin-bottom: 1rem;
