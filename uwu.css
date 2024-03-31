@@ -1155,6 +1155,8 @@ footer p {
     width: 1280px;
     display: flex;
     padding-bottom:3rem;
+    padding-left:0;
+    padding-right:0;
   }
 
   .goals-and-plans-categories {
