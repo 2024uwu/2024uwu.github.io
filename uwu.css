@@ -15,7 +15,7 @@
   --clr-text: #050c10;
   --clr-bg: #fffef5;
   /* specific use */
-  --clr-navbar-scroll: rgba(255, 254, 245, 0.9);
+  --clr-navbar-scroll: rgba(255, 254, 245, 0.8);
   --clr-bgdropdown: var(--clr-blue);
   --clr-title_span: #a555ec;
   --clr-footer: linear-gradient(to right, #f7cf1c, #f7cf1c);
@@ -59,7 +59,7 @@
   --clr-yellow: #e2ba08;
   --clr-purple: #6313aa;
   /* specific use */
-  --clr-navbar-scroll: rgba(21, 21, 21, 0.9);
+  --clr-navbar-scroll: rgba(21, 21, 21, 0.8);
   --clr-bgdropdown: var(--clr-bg);
   --clr-title_span: #e2ba08;
   --clr-footer: linear-gradient(to right, #1436a3, #6313aa);
@@ -144,6 +144,7 @@ body {
 .hero {
   width: 100vw;
   background-color: var(--clr-navbar-scroll);
+  backdrop-filter: blur(6px);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -779,7 +780,6 @@ footer p {
   display: flex;
   list-style: none;
 }
-
 #code{
   color:var(--clr-text);
   text-decoration: underline;
