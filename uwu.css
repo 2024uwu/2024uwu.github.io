@@ -1606,6 +1606,10 @@ footer p {
     width: 100%;
   }
 
+  .slick-dots li button:before{
+    margin-top:0;
+  }
+
   .collapsible-label {
     padding: 0.5rem;
   }
