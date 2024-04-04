@@ -33,6 +33,7 @@
   --clr-collapsible-label-bg: linear-gradient(#fffef5, #fffef5) padding-box,
     linear-gradient(#050c10, #050c10) border-box;
   --origin-cards-theme: -150%;
+  --origin-img-border: 1px solid #050c10;
   /* bg img */
   --bg-image2560: url(light_mode/BG\ 2560.jpg);
   --bg-image1920: url(light_mode/BG\ 1920.jpg);
@@ -86,6 +87,7 @@
       )
       border-box;
   --origin-cards-theme: 0;
+  --origin-img-border: 3px solid var(--clr-member-card-border);
   /* bg img */
   --bg-image2560: url(dark_mode/BG-2560.jpg);
   --bg-image1920: url(dark_mode/BG-1920.jpg);
@@ -364,13 +366,13 @@ body {
   height: auto;
   background-color: transparent;
   border-radius: 2rem;
-  border: 1px solid #050c10;
+  border: var(--origin-img-border);
   margin: 0 20px;
   transform: scale(0.8, 0.8);
   transition: transform 0.4s;
   display: flex;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .card-img-container img {
