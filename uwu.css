@@ -226,13 +226,10 @@ body {
 .navbutton:hover {
   box-shadow: 0 3px 5px var(--navbutton-shadow);
 }
-
 .alert-container {
   width: 100%;
   height: fit-content;
   border-top: 1px solid #050c10;
-  position:sticky;
-  bottom:0;
 }
 
 .alert-text-box {
