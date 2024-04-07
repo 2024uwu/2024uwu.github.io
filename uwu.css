@@ -17,6 +17,7 @@
   /* specific use */
   --clr-alert: var(--clr-blue);
   --clr-alert-a: var(--clr-yellow);
+  --clr-collapsible-a: var(--clr-blue);
   --clr-navbar-scroll: rgba(255, 254, 245, 0.8);
   --clr-bgdropdown: var(--clr-blue);
   --clr-title_span: #a555ec;
@@ -64,6 +65,7 @@
   /* specific use */
   --clr-alert: var(--clr-yellow);
   --clr-alert-a: var(--clr-blue);
+  --clr-collapsible-a: var(--clr-yellow);
   --clr-navbar-scroll: rgba(21, 21, 21, 0.8);
   --clr-bgdropdown: var(--clr-bg);
   --clr-title_span: #e2ba08;
@@ -601,6 +603,10 @@ border-top:none;
 
 .collapsible input {
   display: none;
+}
+
+.collapsible-text a {
+  color: var(--clr-collapsible-a);
 }
 
 .members {
