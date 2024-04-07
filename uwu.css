@@ -512,6 +512,10 @@ padding-right:6rem;
   width:90%;
 }
 
+.goals-and-plans-main a {
+  color: var(--clr-yellow);
+}
+
 .goals-and-plans-categories {
   display: flex;
   flex-direction: column;
