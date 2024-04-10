@@ -688,13 +688,13 @@ border-top:none;
 
 .members-cards-rep {
   display: flex;
-align-items: center;
+  align-items: center;
   width: 600px;
   border-color: var(--clr-member-card-border);
   border-style: solid;
   border-width: var(--member-card-border-px);
   box-shadow: var(--clr-member-card-boxshadow);
-  transition: 0.2s all ease;
+  transition: 0.1s all ease;
   background-color: var(--clr-member-card-bottom-bg);
   border-radius: 25px;
   gap: 1.5rem;
@@ -703,7 +703,7 @@ align-items: center;
 
 .members-cards-rep-outline {
   border-radius: 15px;
-  transition: 0.2s all ease;
+  transition: 0.1s all ease;
 }
 
 .members-img-bottom {
@@ -772,17 +772,18 @@ footer {
   background-image: var(--clr-footer);
   padding: 1.5rem 0;
   text-align: center;
-  padding:3rem 0;
+  padding: 3rem 0;
 }
 
 footer p {
   color: var(--clr-text);
-  font-size:2.5rem
+  font-size: 2.5rem;
 }
 .nav-menu {
   display: flex;
   list-style: none;
 }
+
 #code{
   color:var(--clr-text);
   text-decoration: underline;
@@ -1064,7 +1065,7 @@ footer p {
   }
 
   footer p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .navbar {
