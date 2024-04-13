@@ -1859,3 +1859,87 @@ footer p {
 
   }
 }
+
+/* sticker.html */
+
+.sticker {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2.5rem;
+}
+
+#sticker-text {
+  font-size: clamp(2rem, 6.5vw, 3rem);
+  text-align: center;
+}
+
+.sticker-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.sticker-button-container button {
+  color: #eff6fa;
+  border: none;
+  transition: all 0.2s ease;
+  font-size: clamp(1rem, 3vw, 2rem);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.sticker-group {
+  position: absolute;
+  height: 20rem;
+  display: block;
+}
+
+.sticker-button1 {
+  background-color: var(--clr-blue);
+  box-shadow: 0 4px 5px rgba(89, 124, 235, 0.4);
+}
+
+.sticker-button1:hover {
+  box-shadow: 0 6px 8px rgba(89, 124, 235, 0.5);
+}
+
+.sticker-button1:active {
+  box-shadow: none;
+  background-color: #4269e4;
+}
+
+.sticker-button2 {
+  background-color: var(--clr-purple);
+  box-shadow: 0px 4px 5px rgba(165, 85, 236, 0.5);
+}
+
+.sticker-button2:hover {
+  box-shadow: 0 6px 8px rgba(165, 85, 236, 0.5);
+}
+
+.sticker-button2:hover ~ 
+
+.sticker-button2:active {
+  box-shadow: none;
+  background-color: #8436c9;
+}
+
+@media (width<551px) {
+  .sticker-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
