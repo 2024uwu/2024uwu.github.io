@@ -16,36 +16,36 @@
 
 				<div class="stickers-odd">
 					<div class="sticker" id="odd1">
-						<img src="bobstickers/bobcrying_2.png" alt="">
+						<img class="sticker_odd" src="bobstickers/bobcrying_2.png" alt="">
 					</div>
 					<div class="sticker" id="odd2">
-						<img src="bobstickers/bobderpface.png" alt="">
+						<img class="sticker_even" src="bobstickers/bobderpface.png" alt="">
 					</div>
 					<div class="sticker" id="odd3">
-						<img src="bobstickers/bobhearteyed.png" alt="">
+						<img class="sticker_odd"  src="bobstickers/bobhearteyed.png" alt="">
 					</div>
 					<div class="sticker" id="odd4">
-						<img src="bobstickers/bobjoy.png" alt="">
+						<img class="sticker_even"src="bobstickers/bobjoy.png" alt="">
 					</div>
 					<div class="sticker" id="odd5">
-						<img src="bobstickers/bobmrmarkpose.png" alt="">
+						<img  class="sticker_odd" src="bobstickers/bobmrmarkpose.png" alt="">
 					</div>
 				</div>
 				<div class="stickers-even">
 					<div class="sticker" id="even1">
-						<img src="bobstickers/bobpartying_final.png" alt="">
+						<img class="sticker_even" src="bobstickers/bobpartying_final.png" alt="">
 					</div>
 					<div class="sticker" id="even2">
-						<img src="bobstickers/bobsad.png" alt="">
+						<img  class="sticker_odd" src="bobstickers/bobsad.png" alt="">
 					</div>
 					<div class="sticker" id="even3">
-						<img src="bobstickers/bobsaluting.png" alt="">
+						<img class="sticker_even"src="bobstickers/bobsaluting.png" alt="">
 					</div>
 					<div class="sticker" id="even4">
-						<img src="bobstickers/bobstareyed.png" alt="">
+						<img  class="sticker_odd" src="bobstickers/bobstareyed.png" alt="">
 					</div>
 					<div class="sticker" id="even5">
-						<img src="bobstickers/bobsurpriseface.png" alt="">
+						<img class="sticker_even"src="bobstickers/bobsurpriseface.png" alt="">
 					</div>
 				</div>
 
@@ -63,6 +63,36 @@
 					</div>
 
 		</section>
-        <script src="https://2024uwu.github.io/script.js"></script>
+        <script >
+			const sticker_button_blue = document.querySelector('.sticker-button1')
+			const sticker_button_purple = document.querySelector('.sticker-button2')
+var odd_stickers = document.querySelectorAll('.sticker_odd')
+var even_stickers = document.querySelectorAll('.sticker_even')
+
+sticker_button_blue.addEventListener('mouseover', () => {
+	for (var i = 0; i,odd_stickers.length; i++){
+		odd_stickers[i].classList.add('animated')
+	}
+})
+
+sticker_button_purple.addEventListener('mouseover',() => {
+	for (var i = 0; i,even_stickers.length; i++){
+		even_stickers[i].classList.add('animated2')
+	}
+})
+
+
+sticker_button_blue.addEventListener('mouseout',() => {
+for (var i = 0; i,odd_stickers.length; i++){
+		odd_stickers[i].classList.remove('animated')
+	}
+})
+
+sticker_button_purple.addEventListener('mouseout',() => {
+	for (var i = 0; i,even_stickers.length; i++){
+		even_stickers[i].classList.remove('animated2')
+	}
+})
+		</script>
     </body>
 </html>
