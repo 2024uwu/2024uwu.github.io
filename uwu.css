@@ -1844,6 +1844,8 @@ footer p {
   overflow: hidden;
   align-content: center;
   justify-content: center;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
 }
 .content-wrapper {
   display: flex;
