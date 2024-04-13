@@ -1937,7 +1937,7 @@ footer p {
 }
 
 #sticker-text {
-  font-size: clamp(1.5rem, 5.5vw, 8rem);
+  font-size: clamp(1.5rem, 5.5vw, 6rem);
   text-align: center;
 }
 
@@ -1972,7 +1972,6 @@ img:hover{
 
 .stickers-odd,
 .stickers-even {
-  z-index: 1;
   width: 100%;
 }
 
