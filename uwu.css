@@ -1685,12 +1685,7 @@ footer p {
   opacity: .5;
   transform: scale(4)
 }
-img {
-  transition: all .3s ease
-}
-img:hover {
-  opacity: 1
-}
+
 .stickers-even,
 .stickers-odd {
   width: 100%
