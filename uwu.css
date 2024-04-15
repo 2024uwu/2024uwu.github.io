@@ -1683,9 +1683,12 @@ footer p {
   height: 6rem;
   aspect-ratio: 1;
   opacity: .5;
-  transform: scale(4)
+  transform: scale(4);
+  transition: opacity 0.3s;
 }
-
+.sticker img:hover{
+  opacity:1;
+}
 .stickers-even,
 .stickers-odd {
   width: 100%
