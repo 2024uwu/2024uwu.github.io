@@ -30,8 +30,9 @@
   --clr-member-card-boxshadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.1);
   --navbutton-shadow: rgba(0, 0, 0, 0.2);
   --members-rep-card-shadow-hover: 0px 3px 10px 0 rgba(0, 0, 0, 0.4);
-  --clr-collapsible-label-bg: linear-gradient(#fffef5, #fffef5) padding-box,linear-gradient(#050c10, #050c10) border-box;
-  --origin-cards-theme: -150%;
+  --clr-collapsible-label-bg: linear-gradient(#fffef5, #fffef5) padding-box,
+    linear-gradient(#050c10, #050c10) border-box;
+  --origin-cards-theme: 0;
   --origin-img-border: 1px solid #050c10;
   --bg-image2560: url(light_mode/BG\ 2560.jpg);
   --bg-image1920: url(light_mode/BG\ 1920.jpg);
@@ -78,8 +79,9 @@
         110deg,
         rgba(255, 255, 255, 0.25),
         rgba(255, 255, 255, 0.08)
-      ) border-box;
-  --origin-cards-theme: 0;
+      )
+      border-box;
+  --origin-cards-theme: 1;
   --origin-img-border: 3px solid var(--clr-member-card-border);
   --bg-image2560: url(dark_mode/BG-2560.jpg);
   --bg-image1920: url(dark_mode/BG-1920.jpg);
@@ -338,8 +340,10 @@ h1 {
   object-fit: contain
 }
 .card-img-dark {
-  position: absolute;
-  top: var(--origin-cards-theme)
+position: absolute;
+top:0;
+opacity:var(--origin-cards-theme);
+transition: none;
 }
 .text-wrapper {
   display: flex;
