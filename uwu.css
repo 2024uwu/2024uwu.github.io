@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: cabin;
-  scroll-behavior: smooth!important;
-  scroll-padding-top: 7.5rem
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 7.5rem;
 }
 :root {
   --clr-yellow: #f7cf1c;
@@ -46,7 +46,7 @@
   --members-bg-mobile: none;
   --moondisplay: block;
   --sundisplay: none;
-  --member-card-border-px: 1px
+  --member-card-border-px: 1px;
 }
 .darkMode {
   --clr-text: #eff6fa;
@@ -75,7 +75,9 @@
   --clr-collapsible-label-bg: linear-gradient(
         rgba(37, 37, 37, 1),
         rgba(37, 37, 37, 1)
-      ) padding-box,linear-gradient(
+      )
+      padding-box,
+    linear-gradient(
         110deg,
         rgba(255, 255, 255, 0.25),
         rgba(255, 255, 255, 0.08)
@@ -95,22 +97,22 @@
   --members-bg-mobile: url(dark_mode/members_dark5.webp);
   --moondisplay: none;
   --sundisplay: block;
-  --member-card-border-px: 3px
+  --member-card-border-px: 3px;
 }
 html {
   background-color: var(--clr-bg);
-  scroll-behavior: smooth!important;
+  scroll-behavior: smooth !important;
 }
 html::-webkit-scrollbar {
   display: none;
 }
 body {
   background-color: var(--clr-bg);
-  scroll-behavior: smooth!important;
+  scroll-behavior: smooth !important;
 }
 .navbar a,
 p {
-  font-size: 3.5rem
+  font-size: 3.5rem;
 }
 h1 {
   font-size: 8rem;
@@ -122,8 +124,8 @@ h1 {
 .origin-header {
   margin-left: auto;
   margin-right: auto;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .hero {
   width: 100vw;
@@ -155,80 +157,83 @@ h1 {
   align-items: center;
 }
 .nav-right {
-  display: flex
+  display: flex;
 }
 .navbar a {
   font: cabin;
   text-decoration: none;
   color: var(--clr-text);
-  text-transform: lowercase
+  text-transform: lowercase;
 }
 .navbutton {
   background-color: transparent;
   border: 3px solid var(--clr-text);
   border-radius: 180px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 .navbutton svg {
   width: 70px;
   height: 70px;
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .navbutton {
   padding: 1rem;
-  margin-left: 3rem
+  margin-left: 3rem;
 }
 .nav-menu {
-  gap: 3rem
+  gap: 3rem;
 }
 .sun {
-  display: var(--sundisplay)
+  display: var(--sundisplay);
 }
 .moon {
-  display: var(--moondisplay,none)
+  display: var(--moondisplay, none);
 }
 .navbutton:hover {
-  box-shadow: 0 3px 5px var(--navbutton-shadow)
+  box-shadow: 0 3px 5px var(--navbutton-shadow);
 }
 .alert-container {
   width: 100%;
   height: fit-content;
-  border-top: 1px solid #050c10
+  border-top: 1px solid #050c10;
 }
 .alert-text-box {
   text-align: center;
   padding: 2rem;
-  background-color: var(--clr-alert)
+  background-color: var(--clr-alert);
 }
 .alert-text-box a {
-  color: var(--clr-alert-a)
+  color: var(--clr-alert-a);
+}
+.alert-text-box p {
+  color: var(--clr-bg);
 }
 .hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh * .65)
+  height: calc(100vh * 0.65);
 }
 .hero-content {
   color: var(--clr-text);
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 .hero-title,
 .members-main {
-  width: 70%
+  width: 70%;
 }
 .hero-text {
-  width: 80%
+  width: 80%;
 }
 .hero-text {
   margin-top: 1rem;
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .hero-button-row {
   display: flex;
@@ -236,39 +241,39 @@ h1 {
   align-items: bottom;
   gap: 4rem;
   margin-top: 4.5rem;
-  margin-bottom: 5rem
+  margin-bottom: 5rem;
 }
 .hero-button-row a {
   cursor: pointer;
   color: #eff6fa;
   border: none;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   text-decoration: none;
   font-size: 3rem;
   padding: 2rem 5rem;
-  border-radius: 40px
+  border-radius: 40px;
 }
 .hero-button1 {
   background-color: var(--clr-blue);
-  box-shadow: 0 4px 5px rgba(89,124,235,.4)
+  box-shadow: 0 4px 5px rgba(89, 124, 235, 0.4);
 }
 .hero-button1:hover {
-  box-shadow: 0 6px 8px rgba(89,124,235,.5)
+  box-shadow: 0 6px 8px rgba(89, 124, 235, 0.5);
 }
 .hero-button1:active {
   box-shadow: none;
-  background-color: #4269e4
+  background-color: #4269e4;
 }
 .hero-button2 {
   background-color: var(--clr-purple);
-  box-shadow: 0 4px 5px rgba(165,85,236,.5)
+  box-shadow: 0 4px 5px rgba(165, 85, 236, 0.5);
 }
 .hero-button2:hover {
-  box-shadow: 0 6px 8px rgba(165,85,236,.5)
+  box-shadow: 0 6px 8px rgba(165, 85, 236, 0.5);
 }
 .hero-button2:active {
   box-shadow: none;
-  background-color: #8436c9
+  background-color: #8436c9;
 }
 .blob-bg {
   background-image: var(--bg-image2560);
@@ -279,10 +284,10 @@ h1 {
   padding-top: 20rem;
   padding-bottom: 10rem;
   background-color: var(--clr-bg);
-  border-top: 3px solid #1a1a1a
+  border-top: 3px solid #1a1a1a;
 }
 .origin {
-  padding-top: 15rem
+  padding-top: 15rem;
 }
 .origin-header {
   text-align: center;
@@ -290,20 +295,20 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin-top: 1.5rem;
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .origin-title {
-  font-weight: 700
+  font-weight: 700;
 }
 .origin-title span {
-  color: var(--clr-title_span)
+  color: var(--clr-title_span);
 }
 .origin-header p {
   font-weight: 400;
-  margin-top: 1rem
+  margin-top: 1rem;
 }
 .origin-text {
-  width: 65%
+  width: 65%;
 }
 .section {
   margin-top: 3rem;
@@ -313,13 +318,13 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
 .img-wrapper {
   padding: 3rem 0;
   width: 180%;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
 }
 .card-img-container {
   width: 100%;
@@ -328,36 +333,36 @@ h1 {
   border-radius: 2rem;
   border: var(--origin-img-border);
   margin: 0 20px;
-  transform: scale(.8,.8);
-  transition: transform .4s;
+  transform: scale(0.8, 0.8);
+  transition: transform 0.4s;
   display: flex;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
 }
 .card-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain
+  object-fit: contain;
 }
 .card-img-dark {
-position: absolute;
-top:0;
-opacity:var(--origin-cards-theme);
-transition: none;
+  position: absolute;
+  top: 0;
+  opacity: var(--origin-cards-theme);
+  transition: none;
 }
 .text-wrapper {
   display: flex;
-  flex-direction: row
+  flex-direction: row;
 }
 .card-text {
   width: 50%;
   padding: 0 1rem;
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .card-text p {
   text-align: center;
   margin: 0 auto;
-  max-width: 30ch
+  max-width: 30ch;
 }
 .slick-dots li button:before {
   font-family: slick;
@@ -370,80 +375,80 @@ transition: none;
   height: 20px;
   content: "•";
   text-align: center;
-  opacity: .25;
+  opacity: 0.25;
   color: var(--clr-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 .slick-dots li {
-  width: 50px
+  width: 50px;
 }
 .slick-slide {
-  opacity: .5;
-  margin: 0 1rem
+  opacity: 0.5;
+  margin: 0 1rem;
 }
 .slick-current {
   opacity: 1;
-  transform: scale(1)
+  transform: scale(1);
 }
 .slick-list {
-  margin: 0 -1rem
+  margin: 0 -1rem;
 }
 .slick-dots li.slick-active button:before {
-  opacity: .75;
-  color: var(--clr-text)
+  opacity: 0.75;
+  color: var(--clr-text);
 }
 .slick-next,
 .slick-prev {
-  visibility: hidden
+  visibility: hidden;
 }
 .goals-and-plans {
   padding: 7rem 0 9rem;
   background-color: var(--clr-bgdropdown);
   width: 100vw;
-  display: flex
+  display: flex;
 }
 .goals-and-plans-container {
   margin-top: 3rem;
   padding-left: 6rem;
   padding-right: 6rem;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 .goals-and-plans-content {
-  color: #eff6fa
+  color: #eff6fa;
 }
 .goals-and-plans-content {
-  width: 50%
+  width: 50%;
 }
 .goals-and-plans-label {
-  margin-top: 1.5rem
+  margin-top: 1.5rem;
 }
 .goals-and-plans-title {
   margin-top: 1.5rem;
-  white-space: nowrap
+  white-space: nowrap;
 }
 .goals-and-plans-main {
   margin-top: 1rem;
-  width: 90%
+  width: 90%;
 }
 .goals-and-plans-main a {
-  color: var(--clr-yellow)
+  color: var(--clr-yellow);
 }
 .goals-and-plans-categories {
   display: flex;
   flex-direction: column;
   width: 50%;
   gap: 3.5rem;
-  padding: 1rem
+  padding: 1rem;
 }
 .collapsible {
   overflow: hidden;
-  position: relative
+  position: relative;
 }
 .collapsible-label span {
-  margin-right: .3em
+  margin-right: 0.3em;
 }
 .collapsible label {
   position: relative;
@@ -452,16 +457,16 @@ transition: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: var(--member-card-border-px) solid transparent;
   width: 100%;
-  box-shadow: 0 3px 5px 0 rgba(0,0,0,.15);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
   white-space: nowrap;
   position: relative;
   font-size: 2.5rem;
   padding: 2.5rem;
   border-radius: 30px;
-  border: calc(var(--member-card-border-px) + 2px) solid transparent
+  border: calc(var(--member-card-border-px) + 2px) solid transparent;
 }
 .collapsible-label svg {
   border-radius: 180px;
@@ -469,9 +474,9 @@ transition: none;
   right: 3rem;
   top: 2.5rem;
   color: var(--clr-text);
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   width: 50px;
-  height: 50px
+  height: 50px;
 }
 .collapsible-text {
   max-height: 1px;
@@ -480,69 +485,73 @@ transition: none;
   opacity: 0;
   width: auto;
   top: -15%;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   background: var(--clr-collapsible-label-bg);
   border: var(--member-card-border-px) solid transparent;
   color: var(--clr-text);
   border-top: none;
   flex: 1;
-  box-shadow: 0 3px 5px 0 rgba(0,0,0,.15);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
   font-size: 2.5rem;
-  border-radius: 30px
+  border-radius: 30px;
 }
-.collapsible input[type=checkbox]:checked ~ .collapsible-text {
+.collapsible input[type="checkbox"]:checked ~ .collapsible-text {
   max-height: fit-content;
   opacity: 1;
   top: 0;
   left: 0;
   border-radius: 0 0 30px 30px;
   padding: 35px;
-  border-top: none
+  border-top: none;
 }
-.collapsible input[type=checkbox]:checked + .collapsible-label {
+.collapsible input[type="checkbox"]:checked + .collapsible-label {
   box-shadow: none;
-  border-radius: 30px 30px 0 0
+  border-radius: 30px 30px 0 0;
 }
-.collapsible input[type=checkbox]:checked + .collapsible-label svg {
-  transform: rotate(180deg)
+.collapsible input[type="checkbox"]:checked + .collapsible-label svg {
+  transform: rotate(180deg);
 }
 .collapsible-text ul {
-  padding: 0 1.5em
+  padding: 0 1.5em;
 }
 .collapsible input {
-  display: none
+  display: none;
 }
 .collapsible-text a {
-  color: var(--clr-collapsible-a)
+  color: var(--clr-collapsible-a);
 }
 .members {
   background-color: var(--clr-bg);
   width: 100vw;
-  padding-top: 4rem
+  padding-top: 4rem;
 }
 .members-label {
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .members-header {
   text-align: center;
   justify-content: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 7rem
+  margin-top: 7rem;
 }
 .members-header h1 {
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .members-header span {
-  background-image: linear-gradient(to right,var(--clr-blue),var(--clr-purple));
+  background-image: linear-gradient(
+    to right,
+    var(--clr-blue),
+    var(--clr-purple)
+  );
   background-clip: text;
-  color: transparent
+  color: transparent;
 }
 .members-main {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .members-cards-container {
   padding: 7rem 0;
@@ -552,26 +561,26 @@ transition: none;
   background-image: var(--members-bg);
   background-size: 90% 90%;
   background-repeat: no-repeat;
-  background-position: center center
+  background-position: center center;
 }
 .members-cards-container a {
   text-decoration: none;
-  color: var(--clr-text)
+  color: var(--clr-text);
 }
 .members-cards-row1 {
   display: flex;
   justify-content: space-evenly;
   width: 70%;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .members-img {
   height: 70%;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 .members-img img {
   width: inherit;
-  height: 100%
+  height: 100%;
 }
 .members-cards {
   border-color: var(--clr-member-card-border);
@@ -581,24 +590,24 @@ transition: none;
   width: 600px;
   box-shadow: var(--clr-member-card-boxshadow);
   overflow: hidden;
-  transition: all .2s ease;
-  transition-timing-function: cubic-bezier(0.68,-0.5,0.265,2);
-  border-radius: 30px
+  transition: all 0.2s ease;
+  transition-timing-function: cubic-bezier(0.68, -0.5, 0.265, 2);
+  border-radius: 30px;
 }
 .members-img-rep {
   height: auto;
   border-radius: 50%;
-  background-color: grey
+  background-color: grey;
 }
 .members-img-rep img {
   aspect-ratio: 1;
   border-radius: 50%;
-  object-fit: contain
+  object-fit: contain;
 }
 .members-img-rep,
 .members-img-rep img {
   width: 120px;
-  height: 120px
+  height: 120px;
 }
 .members-cards-rep {
   display: flex;
@@ -608,95 +617,95 @@ transition: none;
   border-style: solid;
   border-width: var(--member-card-border-px);
   box-shadow: var(--clr-member-card-boxshadow);
-  transition: .1s all ease;
+  transition: 0.1s all ease;
   background-color: var(--clr-member-card-bottom-bg);
   border-radius: 25px;
   gap: 1.5rem;
-  padding: 40px 30px
+  padding: 40px 30px;
 }
 .members-cards-rep-outline {
   border-radius: 15px;
-  transition: .1s all ease
+  transition: 0.1s all ease;
 }
 .members-img-bottom {
   background-color: var(--clr-member-card-bottom-bg);
   width: 100%;
   height: 30%;
   overflow: hidden;
-  padding: 2.5rem
+  padding: 2.5rem;
 }
 .members-img-bottom h3,
 .members-rep-img-bottom h3 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 2.1rem;
-  letter-spacing: 3px
+  letter-spacing: 3px;
 }
 .members-img-bottom h4,
 .members-rep-img-bottom h4 {
   font-weight: 600;
   font-size: 2.3rem;
-  margin-top: .7rem;
-  text-transform: capitalize
+  margin-top: 0.7rem;
+  text-transform: capitalize;
 }
 .members-cards-row2 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
-  width: 100%
+  width: 100%;
 }
 .members-cards-row3,
 .members-cards-row4 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%
+  width: 100%;
 }
 .members-cards:hover {
-  transform: rotate(-2deg)
+  transform: rotate(-2deg);
 }
 .members-cards-rep-outline:hover {
   box-shadow: var(--members-rep-card-shadow-hover);
-  transform: scale(1.005)
+  transform: scale(1.005);
 }
 .members-cards:active {
   transform: rotate(-2deg);
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.4)
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 .members-cards-rep-outline:active {
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.4);
-  transform: scale(.995)
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(0.995);
 }
 .seperator {
   width: 100%;
   background: var(--clr-footer-border-top);
-  height: calc(var(--member-card-border-px) + 4px)
+  height: calc(var(--member-card-border-px) + 4px);
 }
 footer {
   background-image: var(--clr-footer);
   padding: 1.5rem 0;
   text-align: center;
-  padding: 3rem 0
+  padding: 3rem 0;
 }
 footer p {
   color: var(--clr-text);
-  font-size: 2.5rem
+  font-size: 2.5rem;
 }
 .nav-menu {
   display: flex;
-  list-style: none
+  list-style: none;
 }
 #code {
   color: var(--clr-text);
-  text-decoration: underline
+  text-decoration: underline;
 }
 @keyframes scroll-fade {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
     opacity: 1;
-    transition: all .3s ease-in
+    transition: all 0.3s ease-in;
   }
 }
 @media (width<=2560px) {
@@ -706,53 +715,53 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    width: 1920px
+    width: 1920px;
   }
   .navbar a,
   p {
-    font-size: 3rem
+    font-size: 3rem;
   }
   h1 {
-    font-size: 7rem
+    font-size: 7rem;
   }
   .navbutton svg {
     width: 60px;
     height: 60px;
-    color: var(--clr-text)
+    color: var(--clr-text);
   }
   .navbutton {
     padding: 1rem;
     margin-left: 2rem;
-    border: 1px solid var(--clr-text)
+    border: 1px solid var(--clr-text);
   }
   .nav-menu {
-    gap: 3rem
+    gap: 3rem;
   }
   .navbar {
-    padding: 1rem 5rem
+    padding: 1rem 5rem;
   }
   .logo svg {
     width: 250px;
-    height: 250px
+    height: 250px;
   }
   .hero-button-row {
     gap: 3.5rem;
     margin-top: 4.5rem;
-    margin-bottom: 5rem
+    margin-bottom: 5rem;
   }
   .hero-button-row a {
     font-size: 3rem;
     padding: 2rem 5rem;
-    border-radius: 40px
+    border-radius: 40px;
   }
   .origin {
-    padding-top: 15rem
+    padding-top: 15rem;
   }
   .img-wrapper {
-    padding: 2rem 0
+    padding: 2rem 0;
   }
   .slick-dots li {
-    width: 50px
+    width: 50px;
   }
   .slick-dots li button:before {
     font-family: slick;
@@ -765,42 +774,42 @@ footer p {
     height: 20px;
     content: "•";
     text-align: center;
-    opacity: .25;
+    opacity: 0.25;
     color: var(--clr-text);
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
   }
   .goals-and-plans {
-    padding: 7rem 0 9rem
+    padding: 7rem 0 9rem;
   }
   .goals-and-plans-categories {
-    gap: 3.5rem
+    gap: 3.5rem;
   }
   .collapsible label {
     font-size: 2.5rem;
     padding: 2.5rem;
     border-radius: 30px;
-    border: calc(var(--member-card-border-px) + 2px) solid transparent
+    border: calc(var(--member-card-border-px) + 2px) solid transparent;
   }
   .collapsible-text {
-    font-size: 2.5rem
+    font-size: 2.5rem;
   }
   .collapsible-label svg {
     width: 50px;
-    height: 50px
+    height: 50px;
   }
-  .collapsible input[type=checkbox]:checked ~ .collapsible-text {
+  .collapsible input[type="checkbox"]:checked ~ .collapsible-text {
     border-radius: 0 0 30px 30px;
-    padding: 30px
+    padding: 30px;
   }
-  .collapsible input[type=checkbox]:checked + .collapsible-label {
-    border-radius: 30px 30px 0 0
+  .collapsible input[type="checkbox"]:checked + .collapsible-label {
+    border-radius: 30px 30px 0 0;
   }
   .members-header {
-    margin-top: 7rem
+    margin-top: 7rem;
   }
   .members-cards-container {
-    padding: 7rem 0
+    padding: 7rem 0;
   }
   .members-cards-container {
     margin-top: 6rem;
@@ -810,50 +819,50 @@ footer p {
     background-image: var(--members-bg);
     background-size: 90% 90%;
     background-repeat: no-repeat;
-    background-position: center center
+    background-position: center center;
   }
   .members-cards,
   .members-cards-rep {
-    width: 500px
+    width: 500px;
   }
   .members-cards {
     height: 500px;
-    border-radius: 30px
+    border-radius: 30px;
   }
   .members-img-bottom h3,
   .members-rep-img-bottom h3 {
     font-size: 1.8rem;
-    letter-spacing: 3px
+    letter-spacing: 3px;
   }
   .members-img-bottom h4,
   .members-rep-img-bottom h4 {
     margin-top: 1rem;
-    font-size: 2rem
+    font-size: 2rem;
   }
   .members-img-bottom {
-    padding: 30px
+    padding: 30px;
   }
   .members-cards-row2 {
-    margin-top: 3rem
+    margin-top: 3rem;
   }
   .members-cards-rep {
     border-radius: 25px;
     gap: 1rem;
-    padding: 40px 30px
+    padding: 40px 30px;
   }
   .members-img-rep,
   .members-img-rep img {
     width: 80px;
-    height: 80px
+    height: 80px;
   }
   .seperator {
-    height: calc(var(--member-card-border-px) + 4px)
+    height: calc(var(--member-card-border-px) + 4px);
   }
   footer p {
-    font-size: 2.2rem
+    font-size: 2.2rem;
   }
   footer {
-    padding: 2.5rem 0
+    padding: 2.5rem 0;
   }
 }
 @media (width<= 1920px) {
@@ -863,92 +872,92 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    width: 1536px
+    width: 1536px;
   }
   .navbar a,
   p {
-    font-size: 2.5rem
+    font-size: 2.5rem;
   }
   h1 {
-    font-size: 6rem
+    font-size: 6rem;
   }
   .hero-button-row a {
     font-size: 2.5rem;
-    padding: 1.5rem 4.5rem
+    padding: 1.5rem 4.5rem;
   }
   .goals-and-plans-categories {
-    gap: 2.2em
+    gap: 2.2em;
   }
   .collapsible label {
     font-size: 2rem;
-    padding: 2rem
+    padding: 2rem;
   }
   .collapsible-text {
-    font-size: 2rem
+    font-size: 2rem;
   }
   .collapsible-label svg {
     width: 50px;
-    height: 50px
+    height: 50px;
   }
   .members-cards,
   .members-cards-rep {
-    width: 450px
+    width: 450px;
   }
   .members-cards {
-    height: 400px
+    height: 400px;
   }
   .members-img-bottom h3,
   .members-rep-img-bottom h3 {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
   .members-img-bottom h4,
   .members-rep-img-bottom h4 {
     font-size: 1.7rem;
-    margin-top: .5rem
+    margin-top: 0.5rem;
   }
 }
 @media (width<=1536px) {
   .navbar a,
   p {
-    font-size: 1.75rem
+    font-size: 1.75rem;
   }
   h1 {
-    font-size: 3.5rem
+    font-size: 3.5rem;
   }
   footer p {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
   .navbar {
-    padding: .5rem 2.5rem
+    padding: 0.5rem 2.5rem;
   }
   .nav-menu {
-    gap: 1.5rem
+    gap: 1.5rem;
   }
   .logo svg {
     width: 150px;
-    height: 150px
+    height: 150px;
   }
   .hero-text p {
-    width: 40ch
+    width: 40ch;
   }
   .navbutton svg {
     width: 35px;
     height: 35px;
-    color: var(--clr-text)
+    color: var(--clr-text);
   }
   .navbutton {
-    padding: .5rem;
-    margin-left: 1.5rem
+    padding: 0.5rem;
+    margin-left: 1.5rem;
   }
   .hero-button-row {
     gap: 1.5rem;
     margin-top: 2.25rem;
-    margin-bottom: 3rem
+    margin-bottom: 3rem;
   }
   .hero-button-row a {
     font-size: 1.5rem;
     padding: 1rem 2.5rem;
-    border-radius: 20px
+    border-radius: 20px;
   }
   .blob-bg {
     background-image: var(--bg-image1536);
@@ -959,26 +968,26 @@ footer p {
     padding-top: 6rem;
     padding-bottom: 4rem;
     background-color: var(--clr-bg);
-    border-top: 1px solid #1a1a1a
+    border-top: 1px solid #1a1a1a;
   }
   .origin {
-    padding-top: 3rem
+    padding-top: 3rem;
   }
   .img-wrapper {
-    padding: 2rem 0
+    padding: 2rem 0;
   }
   .slick-dots li button:before {
-    font-size: 6px
+    font-size: 6px;
   }
   .slick-dots li {
-    width: initial
+    width: initial;
   }
   .goals-and-plans {
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
   .goals-and-plans-main {
-    text-align: left
+    text-align: left;
   }
   .goals-and-plans-container,
   .hero-container,
@@ -986,101 +995,101 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    width: 1280px
+    width: 1280px;
   }
   .members-cards-container {
-    padding: 4.5rem 0
+    padding: 4.5rem 0;
   }
   .goals-and-plans-container {
     width: 1280px;
     display: flex;
     padding-bottom: 3rem;
     padding-left: 0;
-    padding-right: 0
+    padding-right: 0;
   }
   .goals-and-plans-categories {
-    gap: 1.5rem
+    gap: 1.5rem;
   }
   .goals-and-plans-title {
-    font-size: 3.5rem
+    font-size: 3.5rem;
   }
   .goals-and-plans {
-    padding: 0
+    padding: 0;
   }
   .collapsible label {
     font-size: 1.4rem;
     padding: 1em;
     border-radius: 15px;
-    border: var(--member-card-border-px) solid transparent
+    border: var(--member-card-border-px) solid transparent;
   }
   .collapsible-text {
-    font-size: 1.4rem
+    font-size: 1.4rem;
   }
   .collapsible-label svg {
     width: 30px;
     height: 30px;
     right: 2rem;
-    top: 1.5rem
+    top: 1.5rem;
   }
-  .collapsible input[type=checkbox]:checked ~ .collapsible-text {
+  .collapsible input[type="checkbox"]:checked ~ .collapsible-text {
     border-radius: 0 0 15px 15px;
-    padding: 15px
+    padding: 15px;
   }
-  .collapsible input[type=checkbox]:checked + .collapsible-label {
-    border-radius: 15px 15px 0 0
+  .collapsible input[type="checkbox"]:checked + .collapsible-label {
+    border-radius: 15px 15px 0 0;
   }
   .members-header {
-    margin-top: 2rem
+    margin-top: 2rem;
   }
   .members-cards-container {
-    padding: 1.5rem 0 4rem
+    padding: 1.5rem 0 4rem;
   }
   .members-cards,
   .members-cards-rep {
-    width: 300px
+    width: 300px;
   }
   .members-cards {
     height: 300px;
-    border-radius: 20px
+    border-radius: 20px;
   }
   .members-container h4 {
-    font-weight: 600
+    font-weight: 600;
   }
   .members-cards-container {
     margin-top: 3rem;
-    gap: 2rem
+    gap: 2rem;
   }
   .members-img-bottom {
-    padding: 15px
+    padding: 15px;
   }
   .members-img-bottom h3,
   .members-rep-img-bottom h3 {
     font-size: 1.1rem;
-    letter-spacing: 1.8px
+    letter-spacing: 1.8px;
   }
   .members-img-bottom h4,
   .members-rep-img-bottom h4 {
-    margin-top: .5rem;
-    font-size: 1.27rem
+    margin-top: 0.5rem;
+    font-size: 1.27rem;
   }
   .members-cards-row2 {
-    margin-top: 1rem
+    margin-top: 1rem;
   }
   .members-cards-rep {
     border-radius: 15px;
-    gap: .5rem;
-    padding: 25px 15px
+    gap: 0.5rem;
+    padding: 25px 15px;
   }
   .members-img-rep,
   .members-img-rep img {
     width: 50px;
-    height: 50px
+    height: 50px;
   }
   .seperator {
-    height: var(--member-card-border-px)
+    height: var(--member-card-border-px);
   }
   footer {
-    padding: 1.5rem 0
+    padding: 1.5rem 0;
   }
 }
 @media (width<=1280px) {
@@ -1090,12 +1099,12 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    width: 1024px
+    width: 1024px;
   }
   .navbar {
     width: 100%;
     padding-left: 3rem;
-    padding-right: 3rem
+    padding-right: 3rem;
   }
   .blob-bg {
     background-image: var(--bg-image1280);
@@ -1103,31 +1112,31 @@ footer p {
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-color: var(--clr-bg)
+    background-color: var(--clr-bg);
   }
   .goals-and-plans-container {
     max-width: 1024px;
     padding-left: 0;
     padding-right: 0;
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
   .collapsible-label div {
-    margin-left: 2em
+    margin-left: 2em;
   }
   .collapsible label {
-    font-size: 1.3rem
+    font-size: 1.3rem;
   }
   .collapsible-text {
-    font-size: 1.3rem
+    font-size: 1.3rem;
   }
 }
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .navbar a,
   p {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
   h1 {
-    font-size: 3rem
+    font-size: 3rem;
   }
   .goals-and-plans-container,
   .hero-container,
@@ -1135,26 +1144,26 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    max-width: 768px
+    max-width: 768px;
   }
   .navbar {
     padding-left: 1.5rem;
-    padding-right: 1.5rem
+    padding-right: 1.5rem;
   }
   .logo svg {
     width: 100px;
-    height: 100px
+    height: 100px;
   }
   .navbutton svg {
     width: 30px;
-    height: 30px
+    height: 30px;
   }
   .hero-title {
     width: 70%;
-    margin: 0 auto
+    margin: 0 auto;
   }
   .members-main {
-    width: 70%
+    width: 70%;
   }
   .blob-bg {
     background-image: var(--bg-image1024);
@@ -1163,67 +1172,67 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 10rem;
-    background-color: var(--clr-bg)
+    background-color: var(--clr-bg);
   }
   .goals-and-plans-title {
-    font-size: 3rem
+    font-size: 3rem;
   }
   .goals-and-plans-container {
-    gap: 1.5rem
+    gap: 1.5rem;
   }
   .goals-and-plans-categories {
-    gap: 1rem
+    gap: 1rem;
   }
   .collapsible label {
-    font-size: 1rem
+    font-size: 1rem;
   }
   .collapsible-label svg {
     width: 20px;
     height: 20px;
     top: 1.1rem;
-    right: .7rem
+    right: 0.7rem;
   }
   .collapsible-text {
-    font-size: 1rem
+    font-size: 1rem;
   }
   .goals-and-plans-text {
-    max-height: .1px
+    max-height: 0.1px;
   }
   .members {
-    padding-top: 4rem
+    padding-top: 4rem;
   }
   .members-cards,
   .members-cards-rep {
-    width: 230px
+    width: 230px;
   }
   .members-cards {
-    height: 250px
+    height: 250px;
   }
   .members-cards h4 {
-    font-size: .9rem
+    font-size: 0.9rem;
   }
   .members-cards h3 {
-    font-size: .875rem
+    font-size: 0.875rem;
   }
   .members-rep-img-bottom h3 {
-    font-size: .75rem
+    font-size: 0.75rem;
   }
   .members-rep-img-bottom h4 {
-    margin-top: .3rem;
-    font-size: .95rem
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
   }
   .members-cards-rep {
-    padding: 15px 10px
+    padding: 15px 10px;
   }
   .members-img-rep {
     width: 35px;
-    height: 35px
+    height: 35px;
   }
   .members-img-rep img {
     width: 35px;
     height: 35px;
     border-radius: 50px;
-    object-fit: contain
+    object-fit: contain;
   }
 }
 @media (width<=768px) {
@@ -1233,18 +1242,18 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    max-width: 640px
+    max-width: 640px;
   }
   .navbar a,
   p {
-    font-size: 1.3rem
+    font-size: 1.3rem;
   }
   .hero-text {
-    width: 80%
+    width: 80%;
   }
   .navbar {
     padding-left: 1rem;
-    padding-right: 1rem
+    padding-right: 1rem;
   }
   .blob-bg {
     background-image: var(--bg-image768);
@@ -1253,33 +1262,33 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 7rem;
-    background-color: var(--clr-bg)
+    background-color: var(--clr-bg);
   }
   .section {
-    margin-top: 2.5rem
+    margin-top: 2.5rem;
   }
   .goals-and-plans-categories {
-    padding: 0
+    padding: 0;
   }
   .goals-and-plans-title {
-    font-size: 2.5rem
+    font-size: 2.5rem;
   }
   .collapsible label {
     font-size: 1rem;
-    padding: 1rem .5rem
+    padding: 1rem 0.5rem;
   }
   .collapsible-text {
-    font-size: 1rem
+    font-size: 1rem;
   }
   .collapsible-label svg {
-    right: .45rem
+    right: 0.45rem;
   }
   .members-cards,
   .members-cards-rep {
-    height: fit-content
+    height: fit-content;
   }
   .members-cards-rep {
-    width: 195px
+    width: 195px;
   }
   .members-cards-row1,
   .members-cards-row2,
@@ -1287,49 +1296,49 @@ footer p {
   .members-cards-row4 {
     justify-content: center;
     gap: 1.5rem;
-    padding: 0
+    padding: 0;
   }
   .members-cards {
-    height: 250px
+    height: 250px;
   }
   .members-cards-rep {
-    padding: 15px 15px
+    padding: 15px 15px;
   }
   .members-cards h4 {
-    font-size: .86rem;
+    font-size: 0.86rem;
     font-weight: 500;
-    margin-top: .3rem
+    margin-top: 0.3rem;
   }
   .members-cards h3 {
-    font-size: .8rem
+    font-size: 0.8rem;
   }
   .members-img-rep {
     width: 30px;
-    height: 30px
+    height: 30px;
   }
   .members-img-rep img {
     width: 30px;
-    height: 30px
+    height: 30px;
   }
   .members-rep-img-bottom h3 {
-    font-size: .55rem
+    font-size: 0.55rem;
   }
   .members-rep-img-bottom h4 {
-    font-size: .75rem
+    font-size: 0.75rem;
   }
   .members-header {
-    margin-top: 2rem
+    margin-top: 2rem;
   }
   .members-main {
-    width: 85%
+    width: 85%;
   }
 }
 @media (width<=640px) {
   p {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
   h1 {
-    font-size: 2.6rem
+    font-size: 2.6rem;
   }
   .goals-and-plans-container,
   .hero-container,
@@ -1339,12 +1348,12 @@ footer p {
   .origin-header,
   .text-wrapper {
     max-width: 475px;
-    flex-direction: column
+    flex-direction: column;
   }
   .navbar {
     width: 100%;
     padding-left: 2rem;
-    padding-right: 2rem
+    padding-right: 2rem;
   }
   .blob-bg {
     background-image: var(--bg-image640);
@@ -1353,65 +1362,65 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 10rem;
-    background-color: var(--clr-bg)
+    background-color: var(--clr-bg);
   }
   .nav-menu {
-    display: none
+    display: none;
   }
   .hero-title,
   .members-main {
-    width: 100%
+    width: 100%;
   }
   .hero-button-row {
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
   .hero-button-row a {
     font-size: 1.3rem;
     width: 200px;
-    padding: .75rem 1.75rem
+    padding: 0.75rem 1.75rem;
   }
   .img-wrapper {
-    width: 100%
+    width: 100%;
   }
   .slick-dots li button:before {
-    margin-top: 0
+    margin-top: 0;
   }
   .collapsible-label {
-    padding: .5rem
+    padding: 0.5rem;
   }
   .goals-and-plans-container {
-    gap: 0
+    gap: 0;
   }
   .goals-and-plans-content {
     width: 100%;
-    text-align: center
+    text-align: center;
   }
   .goals-and-plans-main {
     width: 100%;
-    text-align: center
+    text-align: center;
   }
   .goals-and-plans-categories {
     margin-top: 2.5rem;
-    width: 100%
+    width: 100%;
   }
   .collapsible label svg {
-    right: 1rem
+    right: 1rem;
   }
   .section {
-    margin-top: 0
+    margin-top: 0;
   }
   .card-img-container {
     border-radius: 0;
-    border: none
+    border: none;
   }
   .collapsible label {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
   }
   .collapsible-text {
-    text-align: left
+    text-align: left;
   }
   .members-cards-row1,
   .members-cards-row2,
@@ -1419,44 +1428,44 @@ footer p {
   .members-cards-row4 {
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
   .members-cards-row1,
   .members-cards-row2 {
-    gap: 2.2rem
+    gap: 2.2rem;
   }
   .members-cards-row2 {
-    margin-top: 0
+    margin-top: 0;
   }
   .members-cards-row3,
   .members-cards-row4 {
-    gap: 1.3rem
+    gap: 1.3rem;
   }
   .members-cards-row4 {
-    margin-top: -1.2rem
+    margin-top: -1.2rem;
   }
   .members-container h3 {
-    font-size: .72rem
+    font-size: 0.72rem;
   }
   .members-container h4 {
-    font-size: .9rem
+    font-size: 0.9rem;
   }
   .navbutton svg {
     width: 30px;
-    height: 30px
+    height: 30px;
   }
   .members-cards-rep {
-    width: 230px
+    width: 230px;
   }
   .members-img-rep {
     height: 35px;
-    width: 35px
+    width: 35px;
   }
   .members-img-rep img {
     width: 35px;
     height: 35px;
     border-radius: 50px;
-    object-fit: contain
+    object-fit: contain;
   }
   .members-cards-container {
     margin-top: 3rem;
@@ -1467,7 +1476,7 @@ footer p {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed
+    background-attachment: fixed;
   }
 }
 @media (width<=475px) {
@@ -1477,7 +1486,7 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    width: 375px
+    width: 375px;
   }
   .blob-bg {
     background-image: var(--bg-image475);
@@ -1486,42 +1495,42 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding-top: 4rem;
-    background-color: var(--clr-bg)
+    background-color: var(--clr-bg);
   }
   .goals-and-plans-container {
-    text-align: center
+    text-align: center;
   }
   .members-img-rep {
     width: 40px;
-    height: 40px
+    height: 40px;
   }
   .members-img-rep img {
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    object-fit: contain
+    object-fit: contain;
   }
   .members-cards,
   .members-cards-rep {
-    width: 250px
+    width: 250px;
   }
   footer p {
-    font-size: 1rem
+    font-size: 1rem;
   }
   .hero-text,
   .origin-text {
-    width: 100%
+    width: 100%;
   }
   footer {
-    line-height: 1.5rem
+    line-height: 1.5rem;
   }
 }
 @media (width<=375px) {
   h1 {
-    font-size: 2.1rem
+    font-size: 2.1rem;
   }
   p {
-    font-size: 1.1rem
+    font-size: 1.1rem;
   }
   .goals-and-plans-container,
   .hero-container,
@@ -1529,17 +1538,17 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    width: 325px
+    width: 325px;
   }
   .goals-and-plans-categories {
-    padding: 0
+    padding: 0;
   }
   .collapsible-label svg {
     top: 1.05rem;
-    right: .2rem
+    right: 0.2rem;
   }
   .collapsible label {
-    padding: 1rem .75rem
+    padding: 1rem 0.75rem;
   }
 }
 @media (width<=325px) {
@@ -1549,36 +1558,35 @@ footer p {
   .members-header,
   .origin-header,
   .text-wrapper {
-    width: 100%
+    width: 100%;
   }
   .navbar {
     padding-left: 1rem;
-    padding-right: 1rem
+    padding-right: 1rem;
   }
   .collapsible-label svg {
     width: 22px;
     height: 22px;
-    right: -.3rem
+    right: -0.3rem;
   }
   .collapsible label {
-    padding: 1rem .3rem
+    padding: 1rem 0.3rem;
   }
 }
-/* sticker.html */
 .sticker-main {
-  height: 100vh
+  height: 100vh;
 }
 .site {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: repeat(8,1fr);
-  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   overflow: hidden;
   align-content: center;
   justify-content: center;
-  padding-left: .5rem;
-  padding-right: .5rem
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .content-wrapper {
   display: flex;
@@ -1587,339 +1595,339 @@ footer p {
   justify-content: center;
   padding: 0 2.5rem;
   grid-area: 4/1/6/9;
-  z-index: 1
+  z-index: 1;
 }
 .stickers-odd {
   grid-row: 1/4;
   grid-column: 1/9;
   display: grid;
-  grid-template-rows: repeat(3,1fr);
-  grid-template-columns: repeat(6,1fr)
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .stickers-even {
   grid-row: 5/9;
   grid-column: 1/9;
   display: grid;
-  grid-template-rows: repeat(3,1fr);
-  grid-template-columns: repeat(6,1fr)
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 #odd1 {
   grid-area: 1/1/4/2;
   display: flex;
   justify-content: center;
-  align-items: end
+  align-items: end;
 }
 #odd2 {
   justify-self: center;
   align-self: center;
-  grid-row: span 3
+  grid-row: span 3;
 }
 #odd3 {
   grid-area: 2/3/4/5;
   display: grid;
-  place-items: center
+  place-items: center;
 }
 #odd4 {
   grid-area: 2/5/3/6;
   justify-self: center;
-  align-self: center
+  align-self: center;
 }
 #odd5 {
   grid-area: 3/6/5/7;
   justify-self: center;
-  align-self: end
+  align-self: end;
 }
 #even1 {
   grid-area: 1/1/3/2;
   justify-self: start;
-  transform: translate(120%,40%);
-  align-self: center
+  transform: translate(120%, 40%);
+  align-self: center;
 }
 #even2 {
   grid-area: 2/2/3/4;
   display: grid;
   place-items: center;
-  transform: translate(-10%,70%)
+  transform: translate(-10%, 70%);
 }
 #even3 {
   grid-area: 2/3/3/5;
   justify-self: center;
   align-self: end;
-  transform: translateX(60%)
+  transform: translateX(60%);
 }
 #even4 {
   grid-area: 3/5/3/6;
   justify-self: end;
-  align-self: start
+  align-self: start;
 }
 #even5 {
   grid-area: 1/6/2/6;
   align-self: center;
   justify-self: center;
-  transform: translateY(30%)
+  transform: translateY(30%);
 }
 #sticker-text {
   font-size: clamp(1.5rem, 5vw, 7rem);
-  text-align: center
+  text-align: center;
 }
 .sticker-button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 3rem;
-  padding: 2rem 0
+  padding: 2rem 0;
 }
 .sticker-button-container a {
   color: #eff6fa;
   border: none;
-  transition: all .2s ease;
-  font-size: clamp(1rem,2vw,3.5rem);
+  transition: all 0.2s ease;
+  font-size: clamp(1rem, 2vw, 3.5rem);
   padding: 2rem 4rem;
   border-radius: 40px;
   width: fit-content;
-  text-decoration: none
+  text-decoration: none;
 }
 .sticker img {
   height: 6rem;
   aspect-ratio: 1;
-  opacity: .5;
+  opacity: 0.5;
   transform: scale(4);
   transition: opacity 0.3s;
 }
-.sticker img:hover{
-  opacity:1;
+.sticker img:hover {
+  opacity: 1;
 }
 .stickers-even,
 .stickers-odd {
-  width: 100%
+  width: 100%;
 }
 .sticker-button1 {
   background-color: var(--clr-blue);
-  box-shadow: 0 4px 5px rgba(89,124,235,.4)
+  box-shadow: 0 4px 5px rgba(89, 124, 235, 0.4);
 }
 .sticker-button1:hover {
-  box-shadow: 0 6px 8px rgba(89,124,235,.5)
+  box-shadow: 0 6px 8px rgba(89, 124, 235, 0.5);
 }
 .animated {
   animation-name: bounce;
   animation-duration: 150ms;
-  animation-timing-function: cubic-bezier(.71,-0.04,.35,1.49);
+  animation-timing-function: cubic-bezier(0.71, -0.04, 0.35, 1.49);
   animation-iteration-count: 1;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 .animated2 {
   animation-name: bounce2;
   animation-duration: 150ms;
-  animation-timing-function: cubic-bezier(.71,-0.04,.35,1.49);
+  animation-timing-function: cubic-bezier(0.71, -0.04, 0.35, 1.49);
   animation-iteration-count: 1;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 .sticker-button1:active {
   box-shadow: none;
-  background-color: #4269e4
+  background-color: #4269e4;
 }
 .sticker-button2 {
   background-color: var(--clr-purple);
-  box-shadow: 0 4px 5px rgba(165,85,236,.5)
+  box-shadow: 0 4px 5px rgba(165, 85, 236, 0.5);
 }
 .sticker-button2:hover {
-  box-shadow: 0 6px 8px rgba(165,85,236,.5)
+  box-shadow: 0 6px 8px rgba(165, 85, 236, 0.5);
 }
 .sticker-button2:active {
   box-shadow: none;
-  background-color: #8436c9
+  background-color: #8436c9;
 }
 @media (width<=1536px) {
   #odd1 {
-    transform: translateX(-10%)
+    transform: translateX(-10%);
   }
   #even1 {
-    transform: translateX(30%)
+    transform: translateX(30%);
   }
   .sticker img {
-    transform: scale(1.8)
+    transform: scale(1.8);
   }
   .sticker-button-container {
-    gap: 1rem
+    gap: 1rem;
   }
   .sticker-button-container a {
     border-radius: 20px;
-    padding: 1rem 2rem
+    padding: 1rem 2rem;
   }
 }
-@media(width<=768px) {
+@media (width<=768px) {
   .sticker img {
-    transform: scale(1.2)
+    transform: scale(1.2);
   }
   #odd1 {
-    transform: translateX(5%)
+    transform: translateX(5%);
   }
 }
 @media (width<=640px) {
   .sticker-button-container {
     flex-direction: column;
-    align-items: center
+    align-items: center;
   }
   .sticker img {
-    transform: scale(.9)
+    transform: scale(0.9);
   }
   .sticker-button-container a {
-    padding: .75rem 2rem
+    padding: 0.75rem 2rem;
   }
   #odd1 {
-    transform: translate(5%,-5%)
+    transform: translate(5%, -5%);
   }
   #odd4 {
-    transform: translateX(30%)
+    transform: translateX(30%);
   }
   #even1 {
-    transform: translateX(10%)
+    transform: translateX(10%);
   }
   #even4 {
-    transform: translate(60%,-20%)
+    transform: translate(60%, -20%);
   }
   .animated {
     animation-name: bounce_mobile;
     animation-duration: 150ms;
-    animation-timing-function: cubic-bezier(.71,-0.04,.35,1.49);
+    animation-timing-function: cubic-bezier(0.71, -0.04, 0.35, 1.49);
     animation-iteration-count: 1;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards;
   }
   .animated2 {
     animation-name: bounce2_mobile;
     animation-duration: 150ms;
-    animation-timing-function: cubic-bezier(.71,-0.04,.35,1.49);
+    animation-timing-function: cubic-bezier(0.71, -0.04, 0.35, 1.49);
     animation-iteration-count: 1;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards;
   }
 }
-@media(width<=425px) {
+@media (width<=425px) {
   #odd2 {
-    transform: translateX(-15%)
+    transform: translateX(-15%);
   }
   #odd3 {
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
   .sticker-button-container {
-    padding: 1rem 0
+    padding: 1rem 0;
   }
 }
-@media(width<=375px) {
+@media (width<=375px) {
   .sticker img {
-    transform: scale(.7)
+    transform: scale(0.7);
   }
   #odd3,
   #odd3 img {
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
 }
 @media (width<=320px) {
   .stickers-even {
-    margin-top: 2rem
+    margin-top: 2rem;
   }
   #odd2 {
-    transform: translateX(-40%)
+    transform: translateX(-40%);
   }
   #odd5 {
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0);
   }
   #even2 {
-    transform: translate(-200%,40%)
+    transform: translate(-200%, 40%);
   }
   #even3 {
-    transform: translate(60%,-20%)
+    transform: translate(60%, -20%);
   }
   #even4 {
-    transform: translate(80%,-50%)
+    transform: translate(80%, -50%);
   }
 }
 @keyframes bounce {
   0% {
     transform: scale(2) rotate(0);
-    opacity: .5
+    opacity: 0.5;
   }
   25% {
     transform: scale(2.1) rotate(-2.5deg);
-    opacity: .6
+    opacity: 0.6;
   }
   50% {
     transform: scale(2.3) rotate(-5deg);
-    opacity: .75
+    opacity: 0.75;
   }
   75% {
     transform: scale(2.2) rotate(-7.5deg);
-    opacity: .9
+    opacity: 0.9;
   }
   100% {
     transform: scale(2.1) rotate(-10deg);
-    opacity: 1
+    opacity: 1;
   }
 }
 @keyframes bounce2 {
   0% {
     transform: scale(2) rotate(0);
-    opacity: .5
+    opacity: 0.5;
   }
   25% {
     transform: scale(2.1) rotate(2.5deg);
-    opacity: .6
+    opacity: 0.6;
   }
   50% {
     transform: scale(2.3) rotate(5deg);
-    opacity: .75
+    opacity: 0.75;
   }
   75% {
     transform: scale(2.2) rotate(7.5deg);
-    opacity: .9
+    opacity: 0.9;
   }
   100% {
     transform: scale(2.1) rotate(10deg);
-    opacity: 1
+    opacity: 1;
   }
 }
 @keyframes bounce_mobile {
   0% {
     transform: scale(1) rotate(0);
-    opacity: .5
+    opacity: 0.5;
   }
   25% {
     transform: scale(1.1) rotate(-2.5deg);
-    opacity: .6
+    opacity: 0.6;
   }
   50% {
     transform: scale(1.3) rotate(-5deg);
-    opacity: .75
+    opacity: 0.75;
   }
   75% {
     transform: scale(1.2) rotate(-7.5deg);
-    opacity: .9
+    opacity: 0.9;
   }
   100% {
     transform: scale(1.1) rotate(-10deg);
-    opacity: 1
+    opacity: 1;
   }
 }
 @keyframes bounce2_mobile {
   0% {
     transform: scale(1) rotate(0);
-    opacity: .5
+    opacity: 0.5;
   }
   25% {
     transform: scale(1.1) rotate(2.5deg);
-    opacity: .6
+    opacity: 0.6;
   }
   50% {
     transform: scale(1.3) rotate(5deg);
-    opacity: .75
+    opacity: 0.75;
   }
   75% {
     transform: scale(1.2) rotate(7.5deg);
-    opacity: .9
+    opacity: 0.9;
   }
   100% {
     transform: scale(1.1) rotate(10deg);
-    opacity: 1
+    opacity: 1;
   }
 }
