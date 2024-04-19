@@ -277,7 +277,7 @@ h1 {
 }
 .blob-bg {
   background-image: var(--bg-image2560);
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -961,7 +961,6 @@ footer p {
   }
   .blob-bg {
     background-image: var(--bg-image1536);
-    background-size: 100% 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1108,7 +1107,6 @@ footer p {
   }
   .blob-bg {
     background-image: var(--bg-image1280);
-    background-size: 100% 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1167,7 +1165,6 @@ footer p {
   }
   .blob-bg {
     background-image: var(--bg-image1024);
-    background-size: 100% 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1257,7 +1254,6 @@ footer p {
   }
   .blob-bg {
     background-image: var(--bg-image768);
-    background-size: 100% 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1357,7 +1353,6 @@ footer p {
   }
   .blob-bg {
     background-image: var(--bg-image640);
-    background-size: 100% 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1490,7 +1485,6 @@ footer p {
   }
   .blob-bg {
     background-image: var(--bg-image475);
-    background-size: 100% 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: scroll;
