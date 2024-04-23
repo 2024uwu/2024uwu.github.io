@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  min-width: 0;
   box-sizing: border-box;
   font-family: cabin;
   scroll-behavior: smooth !important;
@@ -602,7 +603,7 @@ h1 {
 .members-img-rep img {
   aspect-ratio: 1;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .members-img-rep,
 .members-img-rep img {
