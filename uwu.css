@@ -575,7 +575,10 @@ h1 {
 }
 .members-img {
   height: 70%;
-  object-fit: cover;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  width:100%;
 }
 .members-img img {
   width: inherit;
@@ -1278,7 +1281,6 @@ footer p {
   .collapsible-label svg {
     right: 0.45rem;
   }
-  .members-cards,
   .members-cards-rep {
     height: fit-content;
   }
@@ -1294,7 +1296,7 @@ footer p {
     padding: 0;
   }
   .members-cards {
-    height: 250px;
+    height: 220px;
   }
   .members-cards-rep {
     padding: 15px 15px;
