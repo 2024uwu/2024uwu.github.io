@@ -1509,6 +1509,10 @@ footer p {
   .members-cards-rep {
     width: 250px;
   }
+
+  .members-cards{
+    height:250px;
+  }
   footer p {
     font-size: 1rem;
   }
